@@ -1,0 +1,7 @@
+1.scaffolding
+make all divs, nav,main, border1px red solid
+    add article/:id route and link it within article-works component
+    make each homesection 100vh-acc100containerheight
+    put yellowbar on side
+    put footer below and sticky
+    navbar above and sticky

@@ -1,0 +1,44 @@
+.container{
+    display: grid;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+/* .grid-row-span-6{
+    grid-row: span 6;
+} */
+
+main {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3% 97%;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+main section{
+    grid-column-start: 2;
+    min-height: 100vh;
+}
+
+main section#hero{
+    grid-column-start: 1;
+    grid-column: span 2;
+}
+
+
+
+.yellow-bar{
+    background: yellow;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.home-sections{
+    display: grid;
+}
+
+.home-sections section{
+    height: 100vh;
+}
