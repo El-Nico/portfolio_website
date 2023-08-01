@@ -2,3 +2,23 @@ create scaffold for popup modal to show images
 fill in content for education/cert, proj/exp, cntact and footer
 link in chkout tutvisu, goes to articles/tutvis
 add storage and post usage images
+
+
+//Next Phase (initial style plan)
+style this out section by section
+based on plans in my head in a way
+that is neither easy nor complicated
+but which im reasonably comfortable
+given the time constraints
+
+no data anchors, just simulated data
+for now including carousel images
+
+possibly longest Phase
+
+develop and execute plan for each section
+
+the ultimate aim of this phase is to 
+make the website take shape and look
+aesthetically pleasing to an acceptable
+achievable degree dependent on skill ability
