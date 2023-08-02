@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* ***********VARIABLES******************** */
+:root{
+  --website-width: 1280px;
+  --dark-colour:#333;
+}
+
 /* ***********RESET******************** */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -18,8 +24,10 @@
     4. Improve text rendering
   */
   body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff;
   }
   /*
     5. Improve media defaults
@@ -46,8 +54,36 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  img {
+    width: 100%;
+  }
   /* **********END OF RESET************ */
 
 main, nav, section, div, footer, header{
     border: 1px red solid;
+    text-align: center;
+}
+
+.main-container{
+  /* background: var(--dark-colour); */
+}
+
+.container{
+  max-width: var(--website-width);
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-colour);
+}
+
+ul {
+  list-style: none;
+}
+
+.sticky{
+  position: fixed;
+  top: 0px;
 }

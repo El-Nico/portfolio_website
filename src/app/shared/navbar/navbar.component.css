@@ -1,0 +1,58 @@
+nav{
+    display: grid;
+    /* place-content: center; */
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+nav>.logo{
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 32px Arial, sans-serif;
+}
+
+nav>ul{
+    display: flex;
+    /* line animation kevin powell */
+    border-bottom: 1px solid black;
+    position: relative;
+}
+nav>ul>li{
+    padding: 1rem 1.5rem;
+}
+nav>ul>li>a{
+    text-decoration: none;
+        /* color: #fff; */
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+}
+
+/* line animation kevin powell */
+nav>ul::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    scale: var(--_width, 0.1) 1;
+    translate: var(--left, 0px) 0;
+    transform-origin: left;
+    background: darkblue;
+}
+
+

@@ -22,3 +22,5 @@ the ultimate aim of this phase is to
 make the website take shape and look
 aesthetically pleasing to an acceptable
 achievable degree dependent on skill ability
+
+DARK MODE
