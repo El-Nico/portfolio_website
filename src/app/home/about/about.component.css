@@ -1,4 +1,30 @@
 .yellow-bar{
-    width: 100%;height: 10px;
+    width: 2rem;
+    height: 100%;
     background-color: yellow;
+    margin-inline: 1rem;
 }
+
+main{
+    height: 100%;
+    display: grid;
+    place-content: start;
+    background-color: lightgrey;
+}
+
+.about-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-bar{
+    background-color: aquamarine;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr fit-content(1%);
+}
+
+/* .image-bar>img{
+    height: 100%;
+} */

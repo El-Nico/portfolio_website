@@ -58,6 +58,10 @@
   img {
     width: 100%;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   /* **********END OF RESET************ */
 
 main, nav, section, div, footer, header{
@@ -86,4 +90,12 @@ ul {
 .sticky{
   position: fixed;
   top: 0px;
+}
+
+.grid-col-span-2{
+  grid-column: span 2;
+}
+
+.page{
+  height: 100%;
 }

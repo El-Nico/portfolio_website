@@ -1,0 +1,12 @@
+main{
+    position: relative;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+img{
+    border-radius: 50%;
+    scale: 0.5;
+}

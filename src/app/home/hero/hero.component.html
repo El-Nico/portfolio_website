@@ -1,20 +1,21 @@
 <main>
-    <h1>Hello my name is Nicholas</h1>
+    <h1 class="grid-col-span-2">Hello my name is Nicholas</h1>
 
-    <div class="skills">
-        <p>Data Analysis</p>
-        <p>Machine Learning</p>
+    <p>{{skill}}</p>
+    <!-- <p>Machine Learning</p>
         <p>Web Development</p>
-        <p>Reinforcement Learning</p>
-    </div>
+        <p>Reinforcement Learning</p> -->
 
-    <img
-        src="https://source.unsplash.com/random/1200x1200?black,male,portrait/"
-        alt="carousel-img">
-    <p>Check out my
-        <a [routerLink]="['/articles','tutorial-showcaser']">TutorialShowcaser</a>
-        app or
-    </p>
+    <div class="image-box">
+        <img
+            src="https://source.unsplash.com/random/1200x1200?black,male,portrait/"
+            alt="carousel-img">
+        <p>Check out my
+            <a [routerLink]="['/articles','tutorial-showcaser']">TutorialShowcaser</a>
+            app or
+        </p>
+
+    </div>
 
     <ul>
         <li><a href="#">Download CV</a></li>

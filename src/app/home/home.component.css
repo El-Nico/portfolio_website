@@ -1,62 +1,29 @@
-.container{
+/* dark brain */
+/* https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2F49203125457_a0184cae7a_o.png?alt=media&token=c65577f8-6956-436c-acb6-df3bc02f714f */
+/* data analysis digital marketing */
+/* https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790 */
+/* vscoding */
+/* https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fprogramming-g96a78dfbf_1280.png?alt=media&token=abc8a758-1294-44d5-b04b-e42204500eb5 */
+
+.home-container{
     display: grid;
+    grid-template-columns: fit-content(1rem) 1fr;
 }
-
-.grid-col-span-2{
-    grid-column: span 2;
-}
-
-/* .grid-row-span-6{
-    grid-row: span 6;
-} */
-
-main {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 3% 97%;
-    grid-template-rows: repeat(6, 1fr);
-    scroll-behavior: smooth;
-}
-
-main section{
-    grid-column-start: 2;
-    min-height: 100vh;
-}
-
-main section#hero{
-    grid-column-start: 1;
-    grid-column: span 2;
-    background: url('https://source.unsplash.com/random/1200x1200?code,data,web,ai,machine/') no-repeat center top / cover;
-    color: #fff;
-}
-
-/* main section#hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: -1;
-} */
-
-main section#hero>app-hero{
-    z-index: 2;
-}
-
-
 
 .yellow-bar{
-    background: yellow;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    width: 2rem;
+    height: 100%;
+    background-color: yellow;
+    margin-inline: 1rem;
 }
 
-.home-sections{
+.page-sections{
     display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 3rem; */
 }
 
-.home-sections section{
-    height: 100vh;
+section{
+    min-height: 100vh;
+    display: grid;
 }

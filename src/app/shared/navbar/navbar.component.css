@@ -5,6 +5,7 @@ nav{
     padding-top: 1rem;
     z-index: 1;
     overflow: hidden;
+    background: #666;
 }
 
 nav>.logo{
@@ -34,11 +35,11 @@ nav>ul>li{
 }
 nav>ul>li>a{
     text-decoration: none;
-        /* color: #fff; */
-        text-transform: uppercase;
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        cursor: pointer;
+    color: yellow;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 /* line animation kevin powell */

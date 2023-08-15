@@ -1,4 +1,21 @@
 .red-bar{
-    width: 100%;height: 10px;
+    width: 2rem;
+    height: 100%;
+    margin-inline: 1rem;
     background-color: red;
 }
+
+
+main{
+    height: 100%;
+    display: grid;
+    /* place-content: start center; */
+    background-color: lightgray;
+}
+
+.showcase{
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr fit-content(2rem) 1fr;
+}
+
