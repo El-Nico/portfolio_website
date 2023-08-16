@@ -1,28 +1,26 @@
-<header>
-    <div class="sticky">
+<div class="page">
+    <header>
         <app-navbar></app-navbar>
+        <app-hero></app-hero>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <div class="home-container">
+                <div class="yellow-bar"></div>
+
+                <div class="page-sections">
+                    <section id="about"><app-about></app-about></section>
+                    <section id="education-certification"><app-education-certification></app-education-certification></section>
+                    <section id="projects-experience"><app-projects-experience></app-projects-experience>
+                    </section>
+                    <section id="articles"><app-articles></app-articles></section>
+                    <section id="contact"><app-contact></app-contact></section>
+                </div>
+
+            </div>
+        </main>
     </div>
 
-    <section id="hero" class="grid-col-span-2">
-        <div class="header-content">
-            <app-hero></app-hero>
-        </div>
-    </section>
-</header>
-
-<main>
-    <div class="home-container">
-        <div class="yellow-bar"></div>
-
-        <div class="page-sections">
-            <section id="about"><app-about></app-about></section>
-            <section id="education-certification"><app-education-certification></app-education-certification></section>
-            <section id="projects-experience"><app-projects-experience></app-projects-experience>
-            </section>
-            <section id="articles"><app-articles></app-articles></section>
-            <section id="contact"><app-contact></app-contact></section>
-        </div>
-
-    </div>
-</main>
-<footer><app-footer></app-footer></footer>
+    <footer><app-footer></app-footer></footer>
+</div>

@@ -1,24 +1,37 @@
-<main>
-    <h1 class="grid-col-span-2">Hello my name is Nicholas</h1>
+<div class="page">
+    <div class="page-container">
+        <main>
+            <div>
+                <h1 class="grid-col-span-2">Hello my name is Nicholas</h1>
+            </div>
 
-    <p>{{skill}}</p>
-    <!-- <p>Machine Learning</p>
+            <div>
+                <p>{{skill}}</p>
+            </div>
+
+            <!-- <p>Machine Learning</p>
         <p>Web Development</p>
         <p>Reinforcement Learning</p> -->
 
-    <div class="image-box">
-        <img
-            src="https://source.unsplash.com/random/1200x1200?black,male,portrait/"
-            alt="carousel-img">
-        <p>Check out my
-            <a [routerLink]="['/articles','tutorial-showcaser']">TutorialShowcaser</a>
-            app or
-        </p>
+            <div class="image-box">
+                <img
+                    src="https://source.unsplash.com/random/40x40?black,male,portrait/"
+                    alt="carousel-img">
+                <p>Check out my
+                    <a [routerLink]="['/articles','tutorial-showcaser']">TutorialShowcaser</a>
+                    app or
+                </p>
 
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Download CV</a></li>
+                    <li><a href="https://github.com/El-Nico" target="_blank">Go
+                            to
+                            Github</a></li>
+                </ul>
+            </div>
+        </main>
     </div>
 
-    <ul>
-        <li><a href="#">Download CV</a></li>
-        <li><a href="https://github.com/El-Nico" target="_blank">Go to Github</a></li>
-    </ul>
-</main>
+</div>

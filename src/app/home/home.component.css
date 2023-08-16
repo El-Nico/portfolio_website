@@ -5,6 +5,21 @@
 /* vscoding */
 /* https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fprogramming-g96a78dfbf_1280.png?alt=media&token=abc8a758-1294-44d5-b04b-e42204500eb5 */
 
+.page{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+header{
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+}
+
+main{
+    display: grid;
+}
+
 .home-container{
     display: grid;
     grid-template-columns: fit-content(1rem) 1fr;
@@ -20,7 +35,6 @@
 .page-sections{
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 3rem; */
 }
 
 section{

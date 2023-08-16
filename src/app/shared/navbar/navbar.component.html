@@ -1,17 +1,26 @@
-<nav>
-    <div class="logo">
-        <div class="circle-outer">
-            <div class="circle-inner">N</div>
-        </div>
+<div class="page">
+    <div>
+        <nav class="page-container">
+            <div class="logo">
+                <div class="circle-outer">
+                    <div class="circle-inner">
+                        <h3>N</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a [routerLink]="['/home']">Home</a></li>
+                    <li><a [routerLink]="['/home']" fragment="about">About</a></li>
+                    <li><a [routerLink]="['/home']"
+                            fragment="education-certification">Education/Certification</a></li>
+                    <li><a [routerLink]="['/home']"
+                            fragment="projects-experience">Projects/Experience</a></li>
+                    <li><a [routerLink]="['/home']" fragment="articles">Articles</a></li>
+                    <li><a [routerLink]="['/home']" fragment="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-
-    <ul>
-        <li><a [routerLink]="['/home']" fragment="hero">Home</a></li>
-        <li><a [routerLink]="['/home']" fragment="about">About</a></li>
-        <li><a [routerLink]="['/home']" fragment="education-certification">Education/Certification</a></li>
-        <li><a [routerLink]="['/home']" fragment="projects-experience">Projects/Experience</a></li>
-        <li><a [routerLink]="['/home']" fragment="articles">Articles</a></li>
-        <li><a [routerLink]="['/home']" fragment="contact">Contact</a></li>
-    </ul>
-
-</nav>
+</div>

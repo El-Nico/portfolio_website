@@ -8,12 +8,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { HomeModule } from './home/home.module';
 import { ArticleComponent } from './article/article.component';
 import { SharedModule } from './shared/shared.module';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleComponent
+    ArticleComponent,
+    WelcomeComponent
   ],
   imports: [
     AppRoutingModule,

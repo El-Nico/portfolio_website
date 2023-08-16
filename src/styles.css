@@ -17,6 +17,7 @@
   */
   * {
     margin: 0;
+    padding: 0;
   }
   /*
     Typographic tweaks!
@@ -34,7 +35,7 @@
   */
   img, picture, video, canvas, svg {
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
   /*
     6. Remove built-in form typography styles
@@ -55,9 +56,9 @@
     isolation: isolate;
   }
 
-  img {
+  /* img {
     width: 100%;
-  }
+  } */
 
   html{
     scroll-behavior: smooth;
@@ -69,11 +70,11 @@ main, nav, section, div, footer, header{
     text-align: center;
 }
 
-.main-container{
-  /* background: var(--dark-colour); */
+ul{
+  border: 2px green solid;
 }
 
-.container{
+.page-container{
   max-width: var(--website-width);
   margin: auto;
 }
@@ -94,8 +95,4 @@ ul {
 
 .grid-col-span-2{
   grid-column: span 2;
-}
-
-.page{
-  height: 100%;
 }
