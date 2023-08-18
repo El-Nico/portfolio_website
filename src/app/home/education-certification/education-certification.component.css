@@ -1,3 +1,6 @@
+.page{
+    height: 100vh;
+}
 .red-bar{
     width: 2rem;
     height: 100%;
@@ -9,7 +12,6 @@ main{
     height: 100%;
     display: grid;
     /* place-content: start center; */
-    background-color: darkgray;
 }
 
 .showcase{

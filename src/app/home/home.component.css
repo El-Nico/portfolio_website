@@ -26,10 +26,35 @@ main{
 }
 
 .yellow-bar{
-    width: 2rem;
-    height: 100%;
-    background-color: yellow;
-    margin-inline: 1rem;
+    /* positioning */
+    z-index: 1;
+  position: sticky;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+    /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0); */
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.45);
+/* From https://css.glass */
+    width: 1rem;
+    height: 50vh;
+
+    display: grid;
+    align-content: space-between;
+}
+
+.yellow-bar>*{
+    background: var(--main-colour);
+    height: 4rem;
+}
+
+.yellow-bar:first-child, .yellow-bar:last-child{
+    border-radius: 16px;
 }
 
 .page-sections{
@@ -39,5 +64,8 @@ main{
 
 section{
     min-height: 100vh;
-    display: grid;
 }
+/* section>*{
+    display: inline-block;
+    min-height: 100vh;
+} */

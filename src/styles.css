@@ -3,6 +3,10 @@
 :root{
   --website-width: 1280px;
   --dark-colour:#333;
+  --main-colour: #ffbc00;
+  --light-colour: #f4f4f4;
+  --medium-colour: #ccc;
+  /* --medium-colour:#f4f4f4; */
 }
 
 /* ***********RESET******************** */
@@ -95,4 +99,14 @@ ul {
 
 .grid-col-span-2{
   grid-column: span 2;
+}
+/* utility classes */
+.background-dark{
+  background: var(--dark-colour);
+}
+.background-light{
+  background: var(--light-colour);
+}
+.background-medium{
+  background: var(--medium-colour);
 }

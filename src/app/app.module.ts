@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { ArticleComponent } from './article/article.component';
 import { SharedModule } from './shared/shared.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     HomeModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
