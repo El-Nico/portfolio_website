@@ -110,3 +110,6 @@ ul {
 .background-medium{
   background: var(--medium-colour);
 }
+ul>li{
+  border: 1px solid lightblue;
+}

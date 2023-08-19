@@ -8,14 +8,37 @@
 .page{
     display:grid;
     grid-template-columns: 1fr;
+    min-width: 250px;
 }
 
 header{
-    height: 100vh;
-    /* display: grid;
-    grid-template-columns: 1fr; */
+background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat 20% 30% / cover;
+position: relative;
+height: 100vh;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
+
+header>app-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+header>app-hero{
+    position: relative;
+    z-index: 2;
+}
 main{
     display: grid;
 }
@@ -28,8 +51,8 @@ main{
 .yellow-bar{
     /* positioning */
     z-index: 1;
-  position: sticky;
-  left: 1rem;
+  position: fixed;
+  left: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
 
