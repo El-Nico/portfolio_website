@@ -81,6 +81,7 @@ ul{
 .page-container{
   max-width: var(--website-width);
   margin: auto;
+  width: 100%;
 }
 
 a {

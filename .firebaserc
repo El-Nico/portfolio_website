@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "portfolio-website-v2-2023"
+  },
+  "targets": {
+    "portfolio-website-v2-2023": {
+      "hosting": {
+        "portfolio_website": [
+          "portfolio-website-v2-2023"
+        ]
+      }
+    }
   }
 }

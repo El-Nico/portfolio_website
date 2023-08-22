@@ -48,13 +48,19 @@ main{
     grid-template-columns: fit-content(1rem) 1fr;
 }
 
+/* .yellow-bar, #about{
+    grid-row: 1/2;
+    grid-column: 1/1;
+} */
+
 .yellow-bar{
     /* positioning */
     z-index: 1;
-  position: fixed;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+    position: fixed;
+    left: 0.5rem;
+     /* top: 0; */
+    top: 50%;
+    transform: translateY(-50%);
 
     /* From https://css.glass */
 /* background: rgba(255, 255, 255, 0); */

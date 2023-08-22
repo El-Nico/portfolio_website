@@ -2,7 +2,9 @@
     height: 100vh;
     padding-inline: 2rem;
     display: grid;
+    grid-auto-columns: 1fr;
 }
+
 .red-bar{
     width: 2rem;
     height: 100%;

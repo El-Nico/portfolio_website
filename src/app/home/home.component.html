@@ -1,20 +1,20 @@
 <div class="page">
+    <div class="yellow-bar">
+        <div class="section" [routerLink]="['/home']"></div>
+        <div class="section" [routerLink]="['/home']" fragment="about"></div>
+        <div class="section" [routerLink]="['/home']"
+            fragment="education-certification"></div>
+        <div class="section" [routerLink]="['/home']"
+            fragment="projects-experience"></div>
+        <div class="section" [routerLink]="['/home']" fragment="articles"></div>
+        <div class="section" [routerLink]="['/home']" fragment="contact"></div>
+    </div>
     <header>
         <app-navbar></app-navbar>
         <app-hero></app-hero>
     </header>
 
     <main>
-        <div class="yellow-bar">
-            <div class="section" [routerLink]="['/home']"></div>
-            <div class="section" [routerLink]="['/home']" fragment="about"></div>
-            <div class="section" [routerLink]="['/home']"
-                fragment="education-certification"></div>
-            <div class="section" [routerLink]="['/home']"
-                fragment="projects-experience"></div>
-            <div class="section" [routerLink]="['/home']" fragment="articles"></div>
-            <div class="section" [routerLink]="['/home']" fragment="contact"></div>
-        </div>
         <app-about id="about"></app-about>
         <app-education-certification id="education-certification"></app-education-certification>
         <app-projects-experience id="projects-experience"></app-projects-experience>

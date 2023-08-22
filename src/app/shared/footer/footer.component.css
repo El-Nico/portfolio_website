@@ -1,7 +1,40 @@
+main{
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: repeat(auto-fill, 1fr);
+}
+
 .footer-grid{
+    margin: auto;
     color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
+    place-content: center;
+    /* place-items: center; */
 }
 
 a{
     color: #fff;
+    padding: 0.2rem;
+    display: inline;
 }
+
+a>fa-icon{
+    color: var(--main-colour);
+    font-size: 1.2rem;
+}
+
+.socials{
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: repeat(auto-fit, auto);
+place-content: start;
+place-items: center;
+}
+
+
+
+.copyright{
+/* font-size: larger; */
+}
+
