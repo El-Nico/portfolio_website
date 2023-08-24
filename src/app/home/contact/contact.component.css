@@ -3,3 +3,51 @@
     padding-inline: 2rem;
     display: grid;
 }
+
+.page-container{
+    display: grid;
+}
+
+.text-fields{
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* grid areas */
+.name-input{
+    grid-area: name;
+}
+.subject-input{
+    grid-area: subject;
+}
+
+.email-input{
+    grid-area: email;
+} 
+
+.phone-input {
+    grid-area: phone;
+}
+
+.message-input {
+    grid-area: message;
+    /* height: 100px; */
+}
+
+.text-input {
+    padding: 0.5rem 1rem;
+}
+
+button[type='submit']{
+    width: 50%;
+}
+
+.invalid{
+    border: 1px solid red;
+}
+
+.error{
+    color: red;
+}

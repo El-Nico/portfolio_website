@@ -114,3 +114,34 @@ ul {
 ul>li{
   border: 1px solid lightblue;
 }
+
+/* buttons */
+
+button, .btn{
+  display: inline-block;
+  padding: 0.8rem, 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: var(--main-colour);
+}
+
+.btn-light {
+  color: #333;
+  background-color: var(--light-colour);
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: var(--dark-colour);
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover{
+  background-color: var(--main-colour);
+} 

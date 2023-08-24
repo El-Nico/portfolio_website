@@ -9,6 +9,8 @@ import { ProjectsExperienceComponent } from './projects-experience/projects-expe
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EduCertItemComponent } from './education-certification/edu-cert-item/edu-cert-item.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { SharedModule } from '../shared/shared.module';
     EducationCertificationComponent,
     ContactComponent,
     ArticlesComponent,
-    ProjectsExperienceComponent
+    ProjectsExperienceComponent,
+    EduCertItemComponent
   ],
   imports: [
     RouterModule,
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }
