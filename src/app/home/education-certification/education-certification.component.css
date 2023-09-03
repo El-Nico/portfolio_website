@@ -15,7 +15,9 @@
 main{
     height: 100%;
     display: grid;
-    /* place-content: start center; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    justify-content: center;
+    gap: 1rem;
 }
 
 .showcase{

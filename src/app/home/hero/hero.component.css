@@ -3,3 +3,8 @@
     padding-inline: 2rem;
     display: grid;
 }
+
+main{
+    display: grid;
+    grid-template-columns: 200px, 200px;
+}

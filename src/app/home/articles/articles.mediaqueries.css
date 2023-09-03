@@ -1,0 +1,20 @@
+
+@media screen and (max-width: 768px) {
+    .page .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .page .article-grid > *:first-child,
+  .page .article-grid > *:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+  }
+}
+
+  
+  @media(max-width: 600px) {
+    /* Stack Grid Items */
+    .page .article-grid{
+      grid-template-columns: 1fr;
+    }
+  }

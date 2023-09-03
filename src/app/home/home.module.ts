@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EduCertItemComponent } from './education-certification/edu-cert-item/edu-cert-item.component';
+import { ArticleItemComponent } from './articles/article-item/article-item.component';
+import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-exp-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EduCertItemComponent } from './education-certification/edu-cert-item/ed
     ContactComponent,
     ArticlesComponent,
     ProjectsExperienceComponent,
-    EduCertItemComponent
+    EduCertItemComponent,
+    ArticleItemComponent,
+    ProjExpItemComponent
   ],
   imports: [
     RouterModule,

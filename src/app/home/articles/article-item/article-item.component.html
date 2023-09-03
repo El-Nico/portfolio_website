@@ -1,0 +1,75 @@
+<article [class]="item.cardClasses" (click)="toggleEditMode()">
+    <img *ngIf="item.imgUrl && !item.imgDown" [src]="item.imgUrl"
+        [routerLink]="item.articleUrl" alt>
+    <div>
+        <div [class]="item.categoryClasses">{{item.category}}</div>
+        <h3>
+            <a [routerLink]="item.articleUrl"
+                routerLinkActive="router-link-active">{{item.articleTitle}}</a>
+        </h3>
+        <p>{{item.articleDesc}}</p>
+        <img *ngIf="item.imgUrl && item.imgDown && item.imgDown==true"
+            [src]="item.imgUrl" [routerLink]="item.articleUrl" alt>
+    </div>
+    <!-- <form *ngIf="isLoggedIn && editMode==true" [formGroup]="editArticleItemForm"
+        (ngSubmit)="onSubmit">
+
+        <div class="input">
+            <label for="articleTitle">articleTitle</label><br>
+            <input type="text" id="articleTitleFC"
+                formControlName="articleTitle"
+                [placeholder]="item.articleTitle" name="articleTitle"><br><br>
+        </div>
+        <div class="input">
+            <label for="categoryClasses">categoryClasses</label><br>
+            <input type="text" id="categoryClassesFC"
+                formControlName="categoryClasses"
+                [placeholder]="item.categoryClasses"><br><br>
+        </div>
+        <div class="input">
+            <label for="category">category</label><br>
+            <input type="text" id="categoryFC"
+                formControlName="category"
+                [placeholder]="item.category"><br><br>
+        </div>
+        <div class="input">
+            <label for="imgUrl">imgUrl</label><br>
+            <input type="text" id="imgUrlFC"
+                formControlName="imgUrl"
+                [placeholder]="item.imgUrl"><br><br>
+        </div>
+
+        <div class="input">
+            <label for="articleDesc">articleDesc</label><br>
+            <input type="text" id="articleDescFC"
+                formControlName="articleDesc"
+                [placeholder]="item.articleDesc"><br><br>
+        </div>
+
+        <div class="input">
+            <label for="cardClasses">cardClasses</label><br>
+            <input type="text" id="cardClassesFC"
+                formControlName="cardClasses"
+                [placeholder]="item.cardClasses"><br><br>
+        </div>
+
+        <div class="input">
+            <label for="articleUrl">articleUrl</label><br>
+            <input type="text" id="articleUrlFC"
+                formControlName="articleUrl"
+                [placeholder]="item.articleUrl"><br><br>
+        </div>
+
+        <div class="input">
+            <label>
+                <input type="radio" value="True" formControlName="imgDown">
+                <span>True</span>
+            </label>
+            <label>
+                <input type="radio" value="False" formControlName="imgDown">
+                <span>False</span>
+            </label>
+        </div>
+        <button type="submit" class="btn-dark">Submit</button>
+    </form> -->
+</article>

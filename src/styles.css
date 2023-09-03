@@ -4,6 +4,7 @@
   --website-width: 1280px;
   --dark-colour:#333;
   --main-colour: #ffbc00;
+  --secondary-colour: #ff3d00;
   --light-colour: #f4f4f4;
   --medium-colour: #ccc;
   /* --medium-colour:#f4f4f4; */
@@ -102,15 +103,50 @@ ul {
   grid-column: span 2;
 }
 /* utility classes */
-.background-dark{
+.background-dark, .bg-dark{
   background: var(--dark-colour);
+  color: #fff;
 }
-.background-light{
+.background-light, .bg-light{
   background: var(--light-colour);
 }
-.background-medium{
+.background-medium, .bg-medium{
   background: var(--medium-colour);
 }
+
+.background-main, .bg-primary {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark h1,
+  .bg-dark h2,
+  .bg-dark h3,
+  .bg-dark a,
+  .bg-primary h1,
+  .bg-primary h2,
+  .bg-primary h3,
+  .bg-primary a,
+  .bg-secondary h1,
+  .bg-secondary h2,
+  .bg-secondary h3,
+  .bg-secondary a {
+    color: #fff;
+  }
+
+  /* utitlity paddign */
+  .py-1 { padding: 1.5rem 0 }
+  .py-2 { padding: 2rem 0 }
+  .py-3 { padding: 3rem 0 }
+  .p-1 { padding: 1.5rem }
+  .p-2 { padding: 2rem }
+  .p-3 { padding: 3rem }
+
 ul>li{
   border: 1px solid lightblue;
 }

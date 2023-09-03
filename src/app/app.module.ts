@@ -11,13 +11,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { AdminComponent } from './admin/admin.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AdminComponent
   ],
   imports: [
     AppRoutingModule,
@@ -26,7 +30,9 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
     SharedModule,
     FontAwesomeModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth()),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
