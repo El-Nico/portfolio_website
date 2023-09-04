@@ -16,12 +16,13 @@ import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
     WelcomeComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     AppRoutingModule,

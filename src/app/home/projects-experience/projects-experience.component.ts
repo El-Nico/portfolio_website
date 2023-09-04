@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from 'src/app/shared/modal.service';
 
 @Component({
   selector: 'app-projects-experience',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects-experience.component.css']
 })
 export class ProjectsExperienceComponent {
+  bodyText = 'This text can be updated in modal 1';
 
+  constructor(protected modalService: ModalService) { }
 }

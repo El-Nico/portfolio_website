@@ -9,7 +9,7 @@ import { ProjectsExperienceComponent } from './projects-experience/projects-expe
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EduCertItemComponent } from './education-certification/edu-cert-item/edu-cert-item.component';
 import { ArticleItemComponent } from './articles/article-item/article-item.component';
 import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-exp-item.component';
@@ -31,6 +31,7 @@ import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-e
     RouterModule,
     CommonModule,
     SharedModule,
+    FormsModule,
     ReactiveFormsModule
   ]
 })

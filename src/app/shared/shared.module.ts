@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -11,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     NavbarComponent,
     FooterComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ModalComponent
   ]
 
 })
