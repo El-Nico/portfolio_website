@@ -4,31 +4,36 @@
     display: grid;
 }
 .yellow-bar{
-    width: 2rem;
-    height: 100%;
+    width: 4px;
+   height: 100%;
     background-color: var(--main-colour);
     margin-inline: 1rem;
 }
 
 main{
-    height: 100%;
     display: grid;
-    place-content: start;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr, 4px, 1fr;
+    /* background: var(--medium-colour); */
 }
 
-.about-container{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.header{
+    margin-bottom: 2rem;
+}
+.header>h1::after{
+    content: "";
+    height: 2px;
+    width: 3rem;
+    background: var(--main-colour);
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
-.image-bar{
-    background-color: aquamarine;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr fit-content(1%);
+.about-text-container{
+    text-align: justify;
+    padding: 1rem 0.5rem;
 }
 
-/* .image-bar>img{
-    height: 100%;
-} */
+.about-text{
+    line-height: 1.5;
+}

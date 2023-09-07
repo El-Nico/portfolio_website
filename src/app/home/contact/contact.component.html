@@ -2,62 +2,71 @@
     <div class="page-container">
         <header><h1 class="section-title">Contact Me</h1></header>
         <div class="bottom-line"></div>
-        <p class="leaad">Here's how to reach me</p>
-        <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="text-fields">
+        <p class="lead">Here's how to reach me</p>
 
-                <div class="text-input name-input">
-                    <!-- <label for="name">Name</label><br> -->
-                    <input type="text" id="name" formControlName="name"
-                        placeholder="Name"
-                        [class.invalid]="checkInvalid('name')"><br>
-                    <span class="error" *ngIf="checkInvalid('name')"> field not
-                        valid</span>
+        <main class="background-medium">
+            <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="text-fields">
+
+                    <div class="text-input name-input">
+                        <!-- <label for="name">Name</label><br> -->
+                        <input type="text" id="name" formControlName="name"
+                            placeholder="Name"
+                            [class.invalid]="checkInvalid('name')"><br>
+                        <span class="error" *ngIf="checkInvalid('name')"> field
+                            not
+                            valid</span>
+                    </div>
+
+                    <div class="text-input email-input">
+                        <!-- <label for="email">Email Address</label><br> -->
+                        <input type="email" id="email" formControlName="email"
+                            placeholder="E-Mail"
+                            [class.invalid]="checkInvalid('email')"><br><br>
+                        <span class="error" *ngIf="checkInvalid('email')"> field
+                            not
+                            valid</span>
+                    </div>
+
+                    <div class="text-input subject-input">
+                        <!-- <label for="subject">Subject</label><br> -->
+                        <input type="text" id="subject"
+                            formControlName="subject"
+                            placeholder="Subject"
+                            [class.invalid]="checkInvalid('subject')"><br>
+                        <span class="error" *ngIf="checkInvalid('subject')">
+                            field
+                            not
+                            valid</span>
+                    </div>
+
+                    <div class="text-input phone-input">
+                        <!-- <label for="phone">Phone Number</label><br> -->
+                        <input type="number" id="phone" formControlName="phone"
+                            placeholder="Phone Number"
+                            [class.invalid]="checkInvalid('phone')"><br>
+                        <span class="error" *ngIf="checkInvalid('phone')"> field
+                            not
+                            valid</span>
+                    </div>
+
+                    <div class="text-input message-input">
+                        <!-- <label for="message">Write Message</label> -->
+                        <textarea id="message" formControlName="message"
+                            placeholder="Write message.."
+                            style="height:100px; width: 100%;"
+                            [class.invalid]="checkInvalid('message')"></textarea>
+                        <span class="error" *ngIf="checkInvalid('message')">
+                            field
+                            not
+                            valid</span>
+                    </div>
+
                 </div>
 
-                <div class="text-input email-input">
-                    <!-- <label for="email">Email Address</label><br> -->
-                    <input type="email" id="email" formControlName="email"
-                        placeholder="E-Mail"
-                        [class.invalid]="checkInvalid('email')"><br><br>
-                    <span class="error" *ngIf="checkInvalid('email')"> field not
-                        valid</span>
-                </div>
-
-                <div class="text-input subject-input">
-                    <!-- <label for="subject">Subject</label><br> -->
-                    <input type="text" id="subject" formControlName="subject"
-                        placeholder="Subject"
-                        [class.invalid]="checkInvalid('subject')"><br>
-                    <span class="error" *ngIf="checkInvalid('subject')"> field
-                        not
-                        valid</span>
-                </div>
-
-                <div class="text-input phone-input">
-                    <!-- <label for="phone">Phone Number</label><br> -->
-                    <input type="number" id="phone" formControlName="phone"
-                        placeholder="Phone Number"
-                        [class.invalid]="checkInvalid('phone')"><br>
-                    <span class="error" *ngIf="checkInvalid('phone')"> field not
-                        valid</span>
-                </div>
-
-                <div class="text-input message-input">
-                    <!-- <label for="message">Write Message</label> -->
-                    <textarea id="message" formControlName="message"
-                        placeholder="Write message.."
-                        style="height:100px; width: 100%;"
-                        [class.invalid]="checkInvalid('message')"></textarea>
-                    <span class="error" *ngIf="checkInvalid('message')"> field
-                        not
-                        valid</span>
-                </div>
-
-            </div>
-
-            <button type="submit" class="btn-dark">Submit</button>
-        </form>
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </main>
     </div>
 
 </div>

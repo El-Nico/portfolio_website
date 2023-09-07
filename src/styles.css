@@ -69,8 +69,12 @@
     scroll-behavior: smooth;
   }
   /* **********END OF RESET************ */
+  main, nav, section, div, footer, header{
+    /* border: 1px red solid; */
+    text-align: center;
+}
 
-main, nav, section, div, footer, header{
+/* main, nav, section, div, footer, header{
     border: 1px red solid;
     text-align: center;
 }
@@ -78,6 +82,11 @@ main, nav, section, div, footer, header{
 ul{
   border: 2px green solid;
 }
+
+ul>li{
+  border: 1px solid lightblue;
+} */
+
 
 .page-container{
   max-width: var(--website-width);
@@ -105,7 +114,7 @@ ul {
 /* utility classes */
 .background-dark, .bg-dark{
   background: var(--dark-colour);
-  color: #fff;
+  /* color: #fff; */
 }
 .background-light, .bg-light{
   background: var(--light-colour);
@@ -147,9 +156,6 @@ ul {
   .p-2 { padding: 2rem }
   .p-3 { padding: 3rem }
 
-ul>li{
-  border: 1px solid lightblue;
-}
 
 /* buttons */
 

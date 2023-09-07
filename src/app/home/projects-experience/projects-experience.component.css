@@ -15,7 +15,6 @@ main{
     height: 100%;
     display: grid;
     /* place-content: start center; */
-    background-color: lightgray;
 }
 
 .showcase{
