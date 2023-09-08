@@ -10,12 +10,14 @@ h3{
 
 
 .nav-container{
-    display: flex;
+    /* display: flex; */
     /* grid-template-columns: repeat( auto-fit, minmax(320px, max-content)); */
     /* grid-template-columns: min-content minmax(min-content, max-content); */
-    justify-content: space-between;
+    /* justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 #logo{
@@ -28,24 +30,27 @@ h3{
 
 
 ul{
+    justify-self: end;
     display: flex;
     flex-wrap: wrap;
 }
 
 ul>Li{
-    padding: 0rem 0.5rem;
+    /* padding: 0rem 0.5rem; */
     flex:1;
+    font-size: 1em;
 }
 
-ul>li>a{
+ul li a{
     color: #fff;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
+    padding: .5rem 0.75rem;
     transition: border-color 0.5s;
     cursor: pointer;
+    font-weight: bold;
 
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
 }
 
 ul>li>a:hover{

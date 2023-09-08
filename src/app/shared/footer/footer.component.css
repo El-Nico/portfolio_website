@@ -5,12 +5,19 @@ main{
 }
 
 .footer-grid{
-    margin: auto;
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 400px));
-    place-content: center;
-    /* place-items: center; */
+    grid-auto-flow: column;
+    align-items: center;
+    
+/* #0d0d0d
+#1a1a1a
+#262626
+#333333
+#404040
+#4d4d4d
+#595959 */
+    background: #4d4d4d;
 }
 
 a{
@@ -30,11 +37,17 @@ grid-auto-flow: column;
 grid-template-columns: repeat(auto-fit, auto);
 place-content: start;
 place-items: center;
+gap: 0.5rem;
 }
+
+/* .socials a{
+    margin-right: .5rem;
+} */
 
 
 
 .copyright{
-/* font-size: larger; */
+text-align: right;
+padding-left: 1rem;
 }
 

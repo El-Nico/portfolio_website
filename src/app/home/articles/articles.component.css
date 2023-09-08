@@ -1,3 +1,6 @@
+ /* import general settings */
+ @import "general-settings.css";
+
 .page{
     height: 100vh;
     padding-inline: 2rem;
@@ -7,6 +10,19 @@
     line-height: 1.5; */
 }
 
+header{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+header>h1::after{
+  content: "";
+  height: 2px;
+  width: 3rem;
+  background: var(--main-colour);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
   /*  Article list */
   .page .article-grid {
     display: grid;
@@ -14,9 +30,12 @@
     grid-gap: 1rem;
   }
   
-  .page .article-grid > *:first-child,
-  .page .article-grid > *:last-child {
+  
+  .article-grid > *:first-child,
+  .article-grid > *:last-child 
+  {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     align-items: center;

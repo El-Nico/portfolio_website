@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, inject } from '@angular/core';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
@@ -18,7 +18,8 @@ export interface articleItem {
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
-  styleUrls: ['./articles.component.css']
+  styleUrls: ['./articles.component.css'],
+  // encapsulation: ViewEncapsulation.None
 })
 export class ArticlesComponent implements OnInit {
   articleItems$: Observable<any[]>;
@@ -33,8 +34,10 @@ export class ArticlesComponent implements OnInit {
 
   ngOnInit(): void {
     this.articleItems$.subscribe(items => {
-      this.articleItems = items
-      console.log(items)
+      this.articleItems = items.sort((a, b) => {
+        return a.rank - b.rank
+      })
+      console.log(this.articleItems)
     })
   }
 }

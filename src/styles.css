@@ -10,6 +10,12 @@
   /* --medium-colour:#f4f4f4; */
 }
 
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
 /* ***********RESET******************** */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -61,9 +67,9 @@
     isolation: isolate;
   }
 
-  /* img {
+  img {
     width: 100%;
-  } */
+  }
 
   html{
     scroll-behavior: smooth;
@@ -74,7 +80,7 @@
     text-align: center;
 }
 
-/* main, nav, section, div, footer, header{
+main, nav, section, div, footer, header{
     border: 1px red solid;
     text-align: center;
 }
@@ -85,13 +91,17 @@ ul{
 
 ul>li{
   border: 1px solid lightblue;
-} */
+}
 
 
 .page-container{
+  width: 100%;
   max-width: var(--website-width);
   margin: auto;
-  width: 100%;
+
+  /* height rules */
+  max-height: calc(100vh - 3rem);
+  overflow: hidden;
 }
 
 a {

@@ -3,22 +3,33 @@
     padding-inline: 2rem;
     display: grid;
     grid-auto-columns: 1fr;
+    /* padding-bottom:2rem ; */
 }
 
-.red-bar{
-    width: 2rem;
-    height: 100%;
-    margin-inline: 1rem;
-    background-color: red;
+
+header{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+header>h1::after{
+    content: "";
+    height: 2px;
+    width: 3rem;
+    background: var(--main-colour);
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
 main{
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     justify-content: center;
     gap: 1rem;
+    /* overflow: hidden; */
+    /* height: 20vh; */
 }
+
+
 
 .showcase{
     margin-inline: auto;

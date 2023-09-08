@@ -3,6 +3,18 @@
     padding-inline: 2rem;
     display: grid;
 }
+header{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+header>h1::after{
+    content: "";
+    height: 2px;
+    width: 3rem;
+    background: var(--main-colour);
+    display: block;
+    margin: 0 auto 1rem auto;
+}
 
 .page-container{
     display: grid;

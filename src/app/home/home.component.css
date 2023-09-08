@@ -13,7 +13,8 @@
 }
 
 header{
-background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat 20% 30% / cover;
+/* background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat 20% 30% / cover; */
+background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat center center/ cover;
 position: relative;
 height: 100vh;
 display: grid;
