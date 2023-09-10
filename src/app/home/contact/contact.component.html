@@ -8,58 +8,56 @@
             <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="text-fields">
 
-                    <div class="text-input name-input">
+                    <div class="name-input">
                         <!-- <label for="name">Name</label><br> -->
                         <input type="text" id="name" formControlName="name"
                             placeholder="Name"
-                            [class.invalid]="checkInvalid('name')"><br>
+                            [class.invalid]="checkInvalid('name')"
+                            class="text-input"><br>
                         <span class="error" *ngIf="checkInvalid('name')"> field
-                            not
-                            valid</span>
+                            empty or not valid</span>
                     </div>
 
-                    <div class="text-input email-input">
+                    <div class="email-input">
                         <!-- <label for="email">Email Address</label><br> -->
                         <input type="email" id="email" formControlName="email"
                             placeholder="E-Mail"
-                            [class.invalid]="checkInvalid('email')"><br><br>
+                            [class.invalid]="checkInvalid('email')"
+                            class="text-input"><br>
                         <span class="error" *ngIf="checkInvalid('email')"> field
-                            not
-                            valid</span>
+                            empty or not valid</span>
                     </div>
 
-                    <div class="text-input subject-input">
+                    <div class="subject-input">
                         <!-- <label for="subject">Subject</label><br> -->
                         <input type="text" id="subject"
                             formControlName="subject"
                             placeholder="Subject"
-                            [class.invalid]="checkInvalid('subject')"><br>
+                            [class.invalid]="checkInvalid('subject')"
+                            class="text-input"><br>
                         <span class="error" *ngIf="checkInvalid('subject')">
-                            field
-                            not
-                            valid</span>
+                            field empty or not valid</span>
                     </div>
 
-                    <div class="text-input phone-input">
+                    <div class="phone-input">
                         <!-- <label for="phone">Phone Number</label><br> -->
                         <input type="number" id="phone" formControlName="phone"
                             placeholder="Phone Number"
-                            [class.invalid]="checkInvalid('phone')"><br>
+                            [class.invalid]="checkInvalid('phone')"
+                            class="text-input"><br>
                         <span class="error" *ngIf="checkInvalid('phone')"> field
-                            not
-                            valid</span>
+                            empty or not valid</span>
                     </div>
 
-                    <div class="text-input message-input">
+                    <div class="message-input">
                         <!-- <label for="message">Write Message</label> -->
                         <textarea id="message" formControlName="message"
                             placeholder="Write message.."
                             style="height:100px; width: 100%;"
-                            [class.invalid]="checkInvalid('message')"></textarea>
+                            [class.invalid]="checkInvalid('message')"
+                            class="text-input"></textarea>
                         <span class="error" *ngIf="checkInvalid('message')">
-                            field
-                            not
-                            valid</span>
+                            field empty or not valid</span>
                     </div>
 
                 </div>

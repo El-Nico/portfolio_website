@@ -40,4 +40,8 @@ export class ArticlesComponent implements OnInit {
       console.log(this.articleItems)
     })
   }
+
+  isSingleSpan(cardItem: any) {
+    return !cardItem.cardClasses.includes('span-2') && cardItem.imgUrl;
+  }
 }

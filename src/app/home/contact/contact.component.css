@@ -50,10 +50,14 @@ header>h1::after{
 
 .text-input {
     padding: 0.5rem 1rem;
+    width: 100%;
+    align-self: center;
 }
 
 button[type='submit']{
     width: 50%;
+    padding: 0.5rem;
+    font-weight: bold;
 }
 
 .invalid{

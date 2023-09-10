@@ -38,6 +38,7 @@ grid-template-columns: repeat(auto-fit, auto);
 place-content: start;
 place-items: center;
 gap: 0.5rem;
+transform: translateX(1rem);
 }
 
 /* .socials a{
@@ -46,8 +47,18 @@ gap: 0.5rem;
 
 
 
-.copyright{
+.copyright p{
 text-align: right;
-padding-left: 1rem;
+margin-left: 1rem;
+transform: translateX(-1rem);
+}
+
+.copyright a{
+    color: #e6a900 ;
+    cursor: pointer;
+}
+
+.copyright a:hover{
+    opacity: 0.4;
 }
 

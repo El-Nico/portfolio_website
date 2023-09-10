@@ -63,6 +63,15 @@ export class ArticleItemComponent implements OnInit, OnDestroy {
     this.editMode = !this.editMode
   }
 
+  articleImg() {
+    const backImg: string = this.item.imgUrl
+    let imgHeight = this.item.cardClasses.includes('span-2') ? '100%' : 'auto'
+    return {
+      background: 'red',
+      height: imgHeight
+    }
+  }
+
   ngOnDestroy(): void {
     this.authStateSubscription.unsubscribe();
   }

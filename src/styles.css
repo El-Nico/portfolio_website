@@ -5,7 +5,8 @@
   --dark-colour:#333;
   --main-colour: #ffbc00;
   --secondary-colour: #ff3d00;
-  --light-colour: #f4f4f4;
+  /* --light-colour: #f4f4f4; */
+  --light-colour: #eaeaea;
   --medium-colour: #ccc;
   /* --medium-colour:#f4f4f4; */
 }
@@ -80,7 +81,7 @@
     text-align: center;
 }
 
-main, nav, section, div, footer, header{
+/* main, nav, section, div, footer, header{
     border: 1px red solid;
     text-align: center;
 }
@@ -91,7 +92,7 @@ ul{
 
 ul>li{
   border: 1px solid lightblue;
-}
+} */
 
 
 .page-container{
@@ -123,7 +124,7 @@ ul {
 }
 /* utility classes */
 .background-dark, .bg-dark{
-  background: var(--dark-colour);
+  background: var(--dark-colour) !important;
   /* color: #fff; */
 }
 .background-light, .bg-light{
@@ -147,6 +148,7 @@ ul {
   .bg-dark h2,
   .bg-dark h3,
   .bg-dark a,
+  .bg-dark p,
   .bg-primary h1,
   .bg-primary h2,
   .bg-primary h3,
@@ -155,7 +157,7 @@ ul {
   .bg-secondary h2,
   .bg-secondary h3,
   .bg-secondary a {
-    color: #fff;
+    color: #fff !important; 
   }
 
   /* utitlity paddign */
