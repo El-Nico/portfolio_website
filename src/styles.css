@@ -77,7 +77,6 @@
   }
   /* **********END OF RESET************ */
   main, nav, section, div, footer, header{
-    /* border: 1px red solid; */
     text-align: center;
 }
 
@@ -199,3 +198,27 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover{
   background-color: var(--main-colour);
 } 
+
+::-webkit-scrollbar {
+  width: 2em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 20% / 1);
+  border: 0.25em solid hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(120 100% 10% / 1);
+}
+
+/* custom vertical scrollbar */
+@import "./custom-scrollbar-vertical.css"

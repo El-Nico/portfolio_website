@@ -2,7 +2,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { articleItem } from '../articles.component';
 import { FormBuilder } from '@angular/forms';
 import { AuthenticationService } from 'src/app/shared/authentication.service';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, repeat } from 'rxjs';
 import { User } from '@angular/fire/auth';
 
 @Component({
@@ -67,8 +67,10 @@ export class ArticleItemComponent implements OnInit, OnDestroy {
     const backImg: string = this.item.imgUrl
     let imgHeight = this.item.cardClasses.includes('span-2') ? '100%' : 'auto'
     return {
-      background: 'red',
-      height: imgHeight
+      background: `url("${this.item.imgUrl}")`,
+      height: imgHeight,
+      backgroundSize: '100%',
+      backgroundRepeat: 'no-repeat'
     }
   }
 

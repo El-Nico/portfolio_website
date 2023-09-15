@@ -1,18 +1,30 @@
 <div class="page background-medium">
-    <div class="page-container">
-        <header><h1>Articles</h1>
+    <div class="page-container" #pageContainer>
+        <header #header><h1>Articles</h1>
             <!-- <h2>Editor Picks</h2> -->
         </header>
         <!-- <main class="container background-light p-1"> -->
+        <main #mainContainer
+            [ngStyle]="getMainHeight()">
+            <!-- <div class="custom-scrollbar-v">
+                <fa-icon [icon]="faCaretUp"></fa-icon>
+                <fa-icon [icon]="faCaretDown"></fa-icon>
+            </div> -->
 
-        <div class="article-grid background-light p-1">
-            <app-article-item *ngFor="let item of articleItems"
-                [item]="item" [class]="item.cardClasses"
-                [class.span-1]="isSingleSpan(item)">
-                <!-- (click)="toggleEditMode()" -->
-                <!-- https://stackoverflow.com/questions/43447775/objectunsubscribederror-object-unsubscribed-error-when-i-am-using-ngx-progress -->
-            </app-article-item>
-        </div>
-        <!-- </main> -->
+            <!-- <div class="article-grid background-light p-1 custom-scrollbar-vertical"> -->
+            <div class="article-grid background-light p-1">
+                <!-- <div class="article-item-container"> -->
+                <app-article-item *ngFor="let item of articleItems"
+                    [item]="item" [class]="item.cardClasses"
+                    [class.span-1]="isSingleSpan(item)"
+                    [ngStyle]="translater()">
+                    <!-- (click)="toggleEditMode()" -->
+                    <!-- https://stackoverflow.com/questions/43447775/objectunsubscribederror-object-unsubscribed-error-when-i-am-using-ngx-progress -->
+                </app-article-item>
+                <!-- </div> -->
+
+            </div>
+        </main>
     </div>
+    <!-- <app-custom-scrollbar (scrollEvent)="processScroll($event)"></app-custom-scrollbar> -->
 </div>

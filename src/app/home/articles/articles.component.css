@@ -11,8 +11,8 @@
 }
 
 header{
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 header>h1::after{
   content: "";
@@ -23,6 +23,10 @@ header>h1::after{
   margin: 0 auto 1rem auto;
 }
 
+main{
+  position: relative;
+}
+
   /*  Article list */
   .page .article-grid {
     display: grid;
@@ -30,6 +34,8 @@ header>h1::after{
     grid-gap: 1rem;
     grid-auto-rows: min-content;
   }
+
+
 
   .article-grid .span-1{
     display: grid;
@@ -64,6 +70,65 @@ header>h1::after{
     background: #eee;
     padding: 0.5rem;
   }
+
+
+
+  .custom-scrollbar-v{
+    /* positioning */
+    z-index: 1;
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+    /* transform: translateY(-50%); */
+
+    /* From https://css.glass */
+background: rgba(255, 255, 25, 0.8);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.45);
+/* From https://css.glass */
+    width: 0.5rem;
+    height: 100%;
+
+    display: grid;
+    align-content: space-between;
+}
+
+.yellow-bar>*{
+    background: var(--main-colour);
+    height: 4rem;
+}
+
+.yellow-bar:first-child, .yellow-bar:last-child{
+    overflow: hidden;
+}
+
+
+.page{
+  position: relative
+}
+
+.page app-custom-scrollbar{
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.article-grid{
+height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* calculate the height of header and use it to get ex
+height fo main then set main height */
+/* ok i got it track main's height as an observable
+reset  */
+/* next steps get cdkitem to emit percentage relative
+to its position withing boundary */
+
 
   /* import media queries */
   @import "articles.mediaqueries.css";

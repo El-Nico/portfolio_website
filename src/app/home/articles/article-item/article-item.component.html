@@ -1,13 +1,14 @@
 
 <div *ngIf="item.imgUrl && !item.imgDown" [ngStyle]="articleImg()"
     class="article-img">
-    stuff
+
 </div>
 <!-- <img *ngIf="item.imgUrl && !item.imgDown" [src]="item.imgUrl"
     [routerLink]="item.articleUrl" alt> -->
 <!-- <div *ngIf="!item.halfCard; else halfCard"> -->
 <div class="content">
     <div [class]="item.categoryClasses">{{item.category}}</div>
+    <!-- <div [class]="item.categoryClasses">{{item.category}}</div> -->
     <h3>
         <a [routerLink]="item.articleUrl"
             routerLinkActive="router-link-active">{{item.articleTitle}}</a>
@@ -18,7 +19,7 @@
         [src]="item.imgUrl" [routerLink]="item.articleUrl" alt> -->
 </div>
 <div *ngIf="item.imgUrl && item.imgDown && item.imgDown==true"
-    [ngStyle]="articleImg()" class="article-img">stuff</div>
+    [ngStyle]="articleImg()" class="article-img"></div>
 <!--<ng-template #halfCard>
     <div [class]="item.categoryClasses">{{item.category}}</div>
     <h3>

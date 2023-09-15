@@ -1,0 +1,13 @@
+.track{
+    width: 0.5rem;
+    height: 30vh;
+    display: grid;
+    background: transparent;
+    border: 1px solid blue;
+}
+
+.thumb{
+    width: 0.25rem;
+    height: 1rem;
+    background: #fff;
+}

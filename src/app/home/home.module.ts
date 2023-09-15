@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EduCertItemComponent } from './education-certification/edu-cert-item/edu-cert-item.component';
 import { ArticleItemComponent } from './articles/article-item/article-item.component';
 import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-exp-item.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-e
     CommonModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    DragDropModule
   ]
 })
 export class HomeModule { }
