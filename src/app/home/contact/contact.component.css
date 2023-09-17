@@ -3,6 +3,10 @@
     padding-inline: 2rem;
     display: grid;
 }
+/* form{
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+} */
 header{
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -22,9 +26,8 @@ header>h1::after{
 
 .text-fields{
     display: grid;
-    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-template-areas: 'name email' 'subject phone' 'message message' 'submit submit';
     grid-gap: 1.2rem;
-    margin-bottom: 1.2rem;
 }
 
 /* grid areas */
@@ -45,7 +48,10 @@ header>h1::after{
 
 .message-input {
     grid-area: message;
-    /* height: 100px; */
+}
+
+.message-input textarea{
+    height: 100px;
 }
 
 .text-input {
@@ -55,9 +61,12 @@ header>h1::after{
 }
 
 button[type='submit']{
+    grid-area: submit;
     width: 50%;
+    transform: translateX(50%);
     padding: 0.5rem;
     font-weight: bold;
+    /* margin-top: 1.5rem; */
 }
 
 .invalid{
@@ -66,4 +75,16 @@ button[type='submit']{
 
 .error{
     color: red;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 600px) {
+    .text-fields{
+        grid-template-areas: 'name' 'subject' 'email' 'phone' 'message' 'submit';
+    }
+
+    .message-input textarea{
+        height: 50px;
+    }
 }

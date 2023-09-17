@@ -53,16 +53,15 @@
                         <!-- <label for="message">Write Message</label> -->
                         <textarea id="message" formControlName="message"
                             placeholder="Write message.."
-                            style="height:100px; width: 100%;"
+                            style="width: 100%;"
                             [class.invalid]="checkInvalid('message')"
                             class="text-input"></textarea>
                         <span class="error" *ngIf="checkInvalid('message')">
                             field empty or not valid</span>
                     </div>
-
+                    <button type="submit" class="btn-dark">Submit</button>
                 </div>
 
-                <button type="submit" class="btn-dark">Submit</button>
             </form>
         </main>
     </div>

@@ -3,12 +3,7 @@
     padding-inline: 2rem;
     display: grid;
 }
-.red-bar{
-    width: 2rem;
-    height: 100%;
-    margin-inline: 1rem;
-    background-color: red;
-}
+
 
 header{
     margin-bottom: 2rem;
@@ -30,9 +25,14 @@ main{
     /* place-content: start center; */
 }
 
-.showcase{
-    margin-inline: auto;
+.showcase-grid{
     display: grid;
-    grid-template-columns: 1fr fit-content(2rem) 1fr;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+.card {
+    /* background: #fff; */
+    background: var(--light-colour);
+    padding: 1rem;
+  }

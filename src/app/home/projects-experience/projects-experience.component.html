@@ -1,51 +1,19 @@
 <div class="page background-light">
     <div class="page-container">
-        <header><h1>Projects|Experience</h1></header>
+        <header><h1>Projects</h1></header>
 
         <main class="background-medium p-1">
-            <div class="showcase">
-                <div>
-                    <img
-                        src="https://source.unsplash.com/random/200x200?react,code,design/"
-                        alt="carousel-img">
-                    <h3>Tutorial Showcaser</h3>
-                    <p><span>React</span>,<span>Firebase functions</span></p>
-                </div>
-
-                <div class="red-bar"></div>
-                <div>
-                    <img
-                        src="https://source.unsplash.com/random/200x200?angular,design"
-                        alt="carousel-img">
-                    <h3>Portfolio Website</h3>
-                    <p><span>angular</span>,<span>html</span></p>
-                </div>
-                <div class="modal-test">
-                    <div>
-                        <h1>Angular 14 - Modal Popup Example</h1>
-                        <p>{{bodyText}}</p>
-                        <button (click)="modalService.open('modal-1')">Open
-                            Modal 1</button>
-                        <button (click)="modalService.open('modal-2')">Open
-                            Modal 2</button>
-                    </div>
-
-                    <jw-modal id="modal-1">
-                        <h1>A custom modal popup</h1>
-                        <p>Home page text: <input type="text"
-                                [(ngModel)]="bodyText" /></p>
-                        <button (click)="modalService.close();">Close</button>
-                    </jw-modal>
-
-                    <jw-modal id="modal-2">
-                        <h1>A tall modal popup</h1>
-                        <p style="padding-bottom: 1500px;">Close with the button
-                            below or by clicking the background.</p>
-                        <button (click)="modalService.close();">Close</button>
-                    </jw-modal>
-                </div>
+            <div class="showcase-grid">
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"
+                    class="bg-highlighted"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
             </div>
-            <div><ul>
+            <div class="project-links"><ul>
                     <li><a href="#">Download CV</a></li>
                     <li><a href="https://github.com/El-Nico" target="_blank">Go
                             to

@@ -72,30 +72,6 @@ main{
   }
 
 
-
-  .custom-scrollbar-v{
-    /* positioning */
-    z-index: 1;
-    position: absolute;
-    right: 0.5rem;
-    top: 0;
-    /* transform: translateY(-50%); */
-
-    /* From https://css.glass */
-background: rgba(255, 255, 25, 0.8);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0px);
--webkit-backdrop-filter: blur(0px);
-border: 1px solid rgba(255, 255, 255, 0.45);
-/* From https://css.glass */
-    width: 0.5rem;
-    height: 100%;
-
-    display: grid;
-    align-content: space-between;
-}
-
 .yellow-bar>*{
     background: var(--main-colour);
     height: 4rem;
@@ -122,13 +98,24 @@ height: 100%;
   overflow: scroll;
   overflow-x: hidden;
 }
-/* calculate the height of header and use it to get ex
-height fo main then set main height */
-/* ok i got it track main's height as an observable
-reset  */
-/* next steps get cdkitem to emit percentage relative
-to its position withing boundary */
 
 
-  /* import media queries */
-  @import "articles.mediaqueries.css";
+@media screen and (max-width: 768px) {
+  .page .article-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page .article-grid > *:first-child,
+.page .article-grid > *:last-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+}
+
+
+@media(max-width: 600px) {
+  /* Stack Grid Items */
+  .page .article-grid{
+    grid-template-columns: 1fr;
+  }
+}

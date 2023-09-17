@@ -8,7 +8,7 @@ main{
     color: #fff;
     display: grid;
     grid-auto-flow: column;
-    align-items: center;
+    /* align-items: center; */
     
 /* #0d0d0d
 #1a1a1a
@@ -18,6 +18,7 @@ main{
 #4d4d4d
 #595959 */
     background: #4d4d4d;
+    place-content: center;
 }
 
 a{
@@ -34,26 +35,30 @@ a>fa-icon{
 .socials{
 display: grid;
 grid-auto-flow: column;
-grid-template-columns: repeat(auto-fit, auto);
+grid-template-columns:  repeat(auto-fit, minmax(0, max-content));
 place-content: start;
 place-items: center;
-gap: 0.5rem;
-transform: translateX(1rem);
+gap: 0.2rem;
 }
 
-/* .socials a{
-    margin-right: .5rem;
-} */
+.socials:first-child{
+    margin-left: 1rem;
+}
+.socials:last-child{
+    margin-right: 1rem;
+}
 
 
+
+.copyright {
+text-align: right;
+}
 
 .copyright p{
-text-align: right;
-margin-left: 1rem;
-transform: translateX(-1rem);
+    margin: 0 1rem;
 }
 
-.copyright a{
+.copyright p a{
     color: #e6a900 ;
     cursor: pointer;
 }
@@ -61,4 +66,34 @@ transform: translateX(-1rem);
 .copyright a:hover{
     opacity: 0.4;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 600px) {
+/* Styles */
+.footer-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* place-content: center; */
+}
+
+.socials:first-child{
+    margin: 0;
+}
+.socials:last-child{
+    margin: 0;
+}
+
+.socials{
+    width: 100%;
+    place-content: center;
+    /* transform: translateX(-5rem); */
+    
+}
+
+.copyright {
+    text-align: center;
+}
+}
+ 
 

@@ -9,5 +9,9 @@ import { ModalService } from 'src/app/shared/modal.service';
 export class ProjectsExperienceComponent {
   bodyText = 'This text can be updated in modal 1';
 
+  item: any = {
+    cardClasses: ['card']
+  }
+
   constructor(protected modalService: ModalService) { }
 }
