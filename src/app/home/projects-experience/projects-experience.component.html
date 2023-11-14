@@ -1,26 +1,157 @@
 <div class="page background-light">
     <div class="page-container">
-        <header><h1>Projects</h1></header>
+        <header #header><h1>Projects</h1></header>
 
-        <main class="background-medium p-1">
-            <div class="showcase-grid">
-                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
+        <main class="background-medium">
+            <!-- <div class="showcase-grid p-1" [ngStyle]="getMainHeight()"> -->
+            <div class=" p-1 min-5 inner-container">
+                <div class="title-action">
+                    <button>Go To My Projects</button>
+                </div>
+                <div class="project-carousel">
+                    <div class="scroll left-scroll">
+                        <fa-icon [icon]="faChevronLeft"></fa-icon>
+                    </div>
+                    <div class="card">
+                        <div class="image-star-rating">
+                            <img
+                                src="https://source.unsplash.com/random/200x200?react,code,design/"
+                                alt="carousel-img">
+                            <h3>project_Title</h3>
+
+                            <div class="star-rating rating-5">
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptates optio perspiciatis,
+                                eum doloremque cum molestiae iusto blanditiis
+                                reiciendis incidunt pariatur, eveniet odit
+                                assumenda dignissimos, cumque quos molestias
+                                ipsa unde ex?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-star-rating">
+                            <img
+                                src="https://source.unsplash.com/random/200x200?react,code,design/"
+                                alt="carousel-img">
+                            <h3>project_Title</h3>
+                            <div class="star-rating rating-4">
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptates optio perspiciatis,
+                                eum doloremque cum molestiae iusto blanditiis
+                                reiciendis incidunt pariatur, eveniet odit
+                                assumenda dignissimos, cumque quos molestias
+                                ipsa unde ex?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-star-rating">
+                            <img
+                                src="https://source.unsplash.com/random/200x200?react,code,design/"
+                                alt="carousel-img">
+                            <h3>project_Title</h3>
+                            <div class="star-rating rating-3">
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptates optio perspiciatis,
+                                eum doloremque cum molestiae iusto blanditiis
+                                reiciendis incidunt pariatur, eveniet odit
+                                assumenda dignissimos, cumque quos molestias
+                                ipsa unde ex?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-star-rating">
+                            <img
+                                src="https://source.unsplash.com/random/200x200?react,code,design/"
+                                alt="carousel-img">
+                            <h3>project_Title</h3>
+                            <div class="star-rating rating-2">
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptates optio perspiciatis,
+                                eum doloremque cum molestiae iusto blanditiis
+                                reiciendis incidunt pariatur, eveniet odit
+                                assumenda dignissimos, cumque quos molestias
+                                ipsa unde ex?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-star-rating">
+                            <img
+                                src="https://source.unsplash.com/random/200x200?react,code,design/"
+                                alt="carousel-img">
+                            <h3>project_Title</h3>
+                            <div class="star-rating rating-5">
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                                <fa-icon [icon]="faStar"></fa-icon>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptates optio perspiciatis,
+                                eum doloremque cum molestiae iusto blanditiis
+                                reiciendis incidunt pariatur, eveniet odit
+                                assumenda dignissimos, cumque quos molestias
+                                ipsa unde ex?</p>
+                        </div>
+                    </div>
+                    <div class="scroll right-scroll">
+                        <fa-icon [icon]="faChevronRight"></fa-icon>
+                    </div>
+                </div>
+                <!-- <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
                 <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
                 <app-proj-exp-item [class]="item.cardClasses"
                     class="bg-highlighted"></app-proj-exp-item>
                 <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
                 <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
                 <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
-                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item>
-            </div>
-            <div class="project-links"><ul>
-                    <li><a href="#">Download CV</a></li>
-                    <li><a href="https://github.com/El-Nico" target="_blank">Go
-                            to
-                            Github</a></li>
-                </ul>
+                <app-proj-exp-item [class]="item.cardClasses"></app-proj-exp-item> -->
             </div>
         </main>
+        <!-- <div class="project-links" #projectLinks>
+            <ul>
+                <li><a href="#" class="btn btn-outline">Download CV</a></li>
+                <li><a class="btn btn-outline" href="https://github.com/El-Nico"
+                        target="_blank">Go
+                        to
+                        Github</a>
+                </li>
+            </ul>
+        </div> -->
     </div>
 
 </div>

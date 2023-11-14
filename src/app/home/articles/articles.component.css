@@ -25,6 +25,7 @@ header>h1::after{
 
 main{
   position: relative;
+  /* overflow: hidden; */
 }
 
   /*  Article list */
@@ -95,7 +96,7 @@ main{
 
 .article-grid{
 height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 

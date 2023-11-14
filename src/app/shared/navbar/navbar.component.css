@@ -10,12 +10,6 @@ h3{
 
 
 .nav-container{
-    /* display: flex; */
-    /* grid-template-columns: repeat( auto-fit, minmax(320px, max-content)); */
-    /* grid-template-columns: min-content minmax(min-content, max-content); */
-    /* justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -28,25 +22,29 @@ h3{
     color: #fff;
 }
 
+.nav-links{
+    max-width: 100vw;
+}
+
 
 ul{
-    justify-self: end;
+    /* justify-self: end; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    max-width: 100vw;
 }
 
 ul>Li{
     /* padding: 0rem 0.5rem; */
     flex:1;
-    font-size: 1em;
 }
 
 ul li a{
     color: #fff;
     text-transform: uppercase;
-    border-bottom: 3px transparent solid;
+    /* border-bottom: 3px transparent solid;
     padding: .5rem 0.75rem;
-    transition: border-color 0.5s;
+    transition: border-color 0.5s; */
     cursor: pointer;
     font-weight: bold;
 
@@ -59,4 +57,16 @@ border-color: var(--medium-colour);
 
 ul>li>a.current{
     border-color: var(--main-colour);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 600px) {
+    .nav-container{
+        grid-template-columns: 1fr;
+    }
+
+    #logo{
+        justify-self: center; 
+    }
 }

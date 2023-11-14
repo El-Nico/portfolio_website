@@ -5,10 +5,7 @@
 }
 
 
-header{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
+
 header>h1::after{
     content: "";
     height: 2px;
@@ -19,16 +16,20 @@ header>h1::after{
 }
 
 
-main{
-    height: 100%;
-    display: grid;
-    /* place-content: start center; */
-}
-
 .showcase-grid{
+    
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.showcase-grid>*:first-child{
+grid-column: span 2;
+background: #242443;
+color: #fff;
 }
 
 .card {
@@ -36,3 +37,126 @@ main{
     background: var(--light-colour);
     padding: 1rem;
   }
+
+  .project-links{
+    padding:1rem 0;
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+
+  main{
+    background-image: url(../../../assets/gradient-connection-background_52683-118589.avif);
+  }
+  .min-5{
+    min-height: 500px;
+  }
+
+  .title-action>button{
+    cursor: pointer;
+    background: orange;
+  }
+
+  .title-action>button:hover{
+    cursor: pointer;
+    background: #FED8B1;
+  }
+
+  .card{
+    background: transparent;
+    color: white;
+    height: fit-content;
+    margin-block: auto;
+  }
+
+  .project-carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    gap: 2rem;
+    place-content: center;
+  }
+
+  .scroll{
+    height: 2rem;
+  }
+
+  .star-rating{
+    height: 2rem;
+  }
+
+  .rating-5>*:nth-child(-n+5){
+    background: orange;
+      }
+      .rating-4>*:nth-child(-n+4){
+        background: orange;
+          }
+          .rating-3>*:nth-child(-n+3){
+            background: orange;
+              }
+              .rating-2>*:nth-child(-n+2){
+                background: orange;
+                  }
+                                        
+  .rating-1>*:nth-child(-n+1){
+background: orange;
+  }
+
+  .project-carousel{
+    position: relative;
+  }
+
+  .scroll{
+    height: 100%;
+    width: 5rem;
+    display: grid;
+    color: white;
+    place-content: center;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .left-scroll{
+    position: absolute;
+    top: 0;
+    left:0;
+  }
+
+  .right-scroll{
+    position: absolute;
+    top: 0;
+    right:0;
+  }
+  /* .scroll::before{
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+  } */
+
+  /* header{
+    /* background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat 20% 30% / cover; */
+    /* background: url('https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/hero%2Fdigital-marketing-g200b3fcf4_1280.jpg?alt=media&token=aea5ae74-17db-43eb-b4d0-a427f308f790')  no-repeat center center/ cover;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    z-index: 3;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1; */
+    /* } */ 

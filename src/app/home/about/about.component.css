@@ -37,3 +37,30 @@ main{
 .about-text{
     line-height: 1.5;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 600px) {
+    main{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 4px 1fr;
+    }
+
+    .message-input textarea{
+        height: 50px;
+    }
+
+    .yellow-bar{
+        height: 4px;
+       width: 100%;
+        background-color: var(--main-colour);
+        margin-block: 1rem;
+        margin-inline: 0;
+    }
+
+    .about-text-container{
+        /* text-align: justify; */
+        padding: 1rem 0;
+        align-self: center;
+    }
+}

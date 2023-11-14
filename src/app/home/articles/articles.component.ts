@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewEncapsulat
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Observable, Subscription, fromEvent } from 'rxjs';
+import { ScrollResizeService } from 'src/app/shared/scroll-resize.service';
 
 export interface articleItem {
   categoryClasses: string[],
@@ -40,16 +41,14 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
 
   translateValue = 0;
 
-  resizeObservable$: Observable<Event>
-  resizeSubscription$!: Subscription;
-  mainHeight: number = 0;
-  headerHeight: number = 0;
+  subCompHeight = 0;
+  subCompHeightSubscription!: Subscription
 
-  constructor() {
+  constructor(private scrollResizeService: ScrollResizeService) {
     const articleItemCollection = collection(this.firestore, 'articles')
     this.articleItems$ = collectionData(articleItemCollection);
 
-    this.resizeObservable$ = fromEvent(window, 'resize');
+
   }
 
   processScroll(e: any) {
@@ -64,25 +63,25 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
   }
 
   getMainHeight() {
+    // console.log(`calc(${this.scrollResizeService.pageContainerMaxHeight} - ${this.subCompHeight}px)`)
     return {
-      height: `calc(100vh - 3rem - ${this.headerHeight}px`
+
+      maxHeight: `calc(${this.scrollResizeService.pageContainerMaxHeight} - ${this.subCompHeight}px)`
     }
   }
   isSingleSpan(cardItem: any) {
     return !cardItem.cardClasses.includes('span-2') && cardItem.imgUrl;
   }
 
-  calculateMainHeight() {
-    // console.log(this.pageContainer.nativeElement)
-    const pageContainerHeight = this.pageContainer.nativeElement.offsetHeight;
-    this.headerHeight = this.header.nativeElement.offsetHeight;
-    this.mainHeight = pageContainerHeight - this.headerHeight
-    console.log(pageContainerHeight, this.headerHeight, this.mainHeight)
-    return this.getMainHeight();
-  }
 
   ngAfterViewInit(): void {
-    this.calculateMainHeight();
+
+    this.subCompHeightSubscription = this.scrollResizeService.getsubCompHeight([this.header])
+      .subscribe(height => {
+        // console.log(height)
+        this.subCompHeight = height
+        this.getMainHeight();
+      });
   }
 
 
@@ -94,15 +93,12 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
       console.log(this.articleItems)
     })
 
-    this.resizeSubscription$ = this.resizeObservable$.subscribe(evt => {
-      console.log('event', evt)
-      this.calculateMainHeight()
-    })
+
 
   }
 
   ngOnDestroy() {
-    this.resizeSubscription$.unsubscribe()
+    this.subCompHeightSubscription.unsubscribe()
   }
 
 }

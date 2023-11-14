@@ -4,15 +4,15 @@
             <!-- <h2>Editor Picks</h2> -->
         </header>
         <!-- <main class="container background-light p-1"> -->
-        <main #mainContainer
-            [ngStyle]="getMainHeight()">
+        <main #mainContainer>
             <!-- <div class="custom-scrollbar-v">
                 <fa-icon [icon]="faCaretUp"></fa-icon>
                 <fa-icon [icon]="faCaretDown"></fa-icon>
             </div> -->
 
             <!-- <div class="article-grid background-light p-1 custom-scrollbar-vertical"> -->
-            <div class="article-grid background-light p-1">
+            <div class="article-grid background-light p-1"
+                [ngStyle]="getMainHeight()">
                 <!-- <div class="article-item-container"> -->
                 <app-article-item *ngFor="let item of articleItems"
                     [item]="item" [class]="item.cardClasses"
