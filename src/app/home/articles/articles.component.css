@@ -2,8 +2,9 @@
  @import "general-settings.css";
 
 .page{
-    height: 100vh;
+    /* height: 100vh; */
     padding-inline: 2rem;
+    padding: 2rem 10px 4rem 10px;
     display: grid;
 
     /* font-family: 'Lato', sans-serif;

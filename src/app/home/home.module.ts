@@ -15,6 +15,8 @@ import { ArticleItemComponent } from './articles/article-item/article-item.compo
 import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-exp-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    DragDropModule
+    DragDropModule,
+    MatTooltipModule,
+    SwiperModule,
   ]
 })
 export class HomeModule { }

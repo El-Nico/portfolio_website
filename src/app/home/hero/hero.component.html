@@ -1,16 +1,17 @@
-<div class="page">
-    <div class="page-container">
+<div class="page background-gradient">
+    <div class="padding-container">
         <main>
-            <div class="name-skills">
+            <div class="name-skills" data-aos="fade-right" data-aos-duration="2000">
 
                 <div class="name-title">
-                    <h1>Nicholas Chibuike-Eruba <span class="title">Bsc.
-                            Computing and
-                            Information Technology</span></h1>
-                    <p>I have experience in...</p>
+                    <h1>Nicholas Chibuike-Eruba </h1>
+                    <h1 class="title">Bsc.
+                        Computing and
+                        Information Technology</h1>
                 </div>
 
                 <div class="skills">
+                    <p>I have experience in...</p>
                     <ul>
                         <li><a href="#">Data Analysis</a></li>
                         <li><a href="#">Machine Learning</a></li>
@@ -18,28 +19,28 @@
                     </ul>
                 </div>
 
+                <div class="checkout">
+                    <!-- <p>Check out my
+                        app or
+                    </p> -->
+
+                    <div class="action-button">
+                        <a [routerLink]="['/articles','tutorial-showcaser']"
+                            class="btn-standard btn-small btn btn-main">Tutorial Showcaser</a>
+                        <a href="#" class="btn-standard btn-small btn btn-light">Download CV</a>
+                        <a href="https://github.com/El-Nico"
+                                target="_blank" class="btn-standard btn-small btn btn-light">Go
+                                to
+                                Github</a>
+                    </div>
+                </div>
             </div>
-            <div class="picture-showcase">
+            <div class="picture-showcase" data-aos="fade-left" data-aos-duration="2000">
 
                 <div class="image-box">
                     <img
-                        src="https://source.unsplash.com/random/200x200?black,male,portrait/"
+                        src="assets/web.svg"
                         alt="carousel-img">
-                </div>
-                <div class="checkout">
-                    <p>Check out my
-                        <a [routerLink]="['/articles','tutorial-showcaser']"
-                            class="btn btn-main">Tutorial Showcaser</a>
-                        app or
-                    </p>
-
-                    <ul>
-                        <li><a href="#" class="btn btn-light">Download CV</a></li>
-                        <li><a href="https://github.com/El-Nico"
-                                target="_blank" class="btn btn-light">Go
-                                to
-                                Github</a></li>
-                    </ul>
                 </div>
 
             </div>

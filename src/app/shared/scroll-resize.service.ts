@@ -14,7 +14,7 @@ export class ScrollResizeService {
     return fromEvent(window, 'resize').pipe(
       switchMap(() => {
         const totalSubtractorHeight: number = subtractors.reduce((prevTotalHeight, currElement) => {
-          const currElementHeight = currElement.nativeElement.offsetHeight
+          const currElementHeight = currElement?.nativeElement?.offsetHeight
           console.log(currElementHeight);
           return prevTotalHeight += currElementHeight;
         }, 0)

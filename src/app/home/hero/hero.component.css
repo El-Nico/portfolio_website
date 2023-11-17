@@ -1,25 +1,32 @@
 .page{
-    height: 100vh;
-    padding-inline: 2rem;
-    display: grid;
+    /* height: 100vh; */
+    /* padding-inline: 2rem;
+    display: grid; */
+    min-height: 100vh;
     color: #fff;
+    padding: 10px;
+    display: flex;
 }
 
 
 
 main{
     height: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr, 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .title{
-    font-size: 0.5em;
+    font-size: 22px;
 }
 .name-title, .skills{
     text-align: left;
+    font-size: 18px;
+}
+
+.btn-small {
+    padding: 10px;
 }
 
 .skills>ul{
@@ -57,9 +64,17 @@ main{
 }
 
 img{
-    border-radius: 50%;
-    height: 100%;
+    /* border-radius: 100%; */
+    /* border: 2px solid #fff; */
     justify-self: center;
+}
+
+.action-button {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
 }
 
 .checkout>ul{
@@ -81,4 +96,8 @@ img{
 
 .checkout>ul>li>a:first-child{
     padding-left: 0;
+}
+
+.name-skills {
+    display: flex;
 }

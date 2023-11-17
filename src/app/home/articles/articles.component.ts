@@ -3,6 +3,7 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Observable, Subscription, fromEvent } from 'rxjs';
 import { ScrollResizeService } from 'src/app/shared/scroll-resize.service';
+import AOS from "aos";
 
 export interface articleItem {
   categoryClasses: string[],
@@ -86,6 +87,7 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
+    AOS.init();
     this.articleItems$.subscribe(items => {
       this.articleItems = items.sort((a, b) => {
         return a.rank - b.rank

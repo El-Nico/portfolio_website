@@ -1,7 +1,8 @@
 .page{
-    height: 100vh;
+    /* height: 100vh; */
     padding-inline: 2rem;
     display: grid;
+    padding: 2rem 10px 4rem 10px;
 }
 /* form{
     display: grid;
@@ -75,6 +76,10 @@ button[type='submit']{
 
 .error{
     color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: bold;
+    text-align: left;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -87,4 +92,7 @@ and (max-width : 600px) {
     .message-input textarea{
         height: 50px;
     }
+}
+.input-standard {
+    border-radius: 8px;
 }

@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ModalComponent } from './modal/modal.component';
 import { CustomScrollbarComponent } from './custom-scrollbar/custom-scrollbar.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 
@@ -21,7 +22,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     CommonModule,
     RouterModule,
     FontAwesomeModule,
-    DragDropModule
+    DragDropModule,
+    MatTooltipModule,
   ],
   exports: [
     NavbarComponent,

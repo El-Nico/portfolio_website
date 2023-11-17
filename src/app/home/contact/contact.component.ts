@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import AOS from "aos";
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +16,9 @@ export class ContactComponent {
     phone: ['', Validators.pattern("^((\\+353-?)|0)?[0-9]{10}$")],
     message: ['', Validators.required]
   })
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) { 
+    AOS.init();
+  }
 
   checkInvalid(formControl: string): boolean {
     //this is more error specific and can provide targeted error message to span

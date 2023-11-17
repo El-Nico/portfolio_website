@@ -1,0 +1,218 @@
+
+@media (min-width: 300px) {
+    main{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .name-title {
+        text-align: center;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    .skills {
+        margin-top: 20px;
+    }
+    .picture-showcase {
+        display: none;
+    }
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+    main{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .name-title {
+        text-align: center;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    .skills {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .picture-showcase {
+        display: none;
+    }
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+    main{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .name-title {
+        text-align: center;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    .skills {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .picture-showcase {
+        display: none;
+    }
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+    main{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .name-title {
+        text-align: center;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+    }
+    .skills {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .picture-showcase {
+        display: none;
+    }
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+    main{
+        flex-direction: row;
+        padding-top: 100px;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+    }
+    .name-title {
+        text-align: left;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+    }
+    .skills {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .picture-showcase {
+        display: block;
+    }
+    /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+    main{
+        flex-direction: row;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+    }
+    .name-title {
+        text-align: left;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+    }
+    .skills {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .picture-showcase {
+        display: block;
+    }
+    /* hi-res laptops and desktops */
+}
+@media (min-width: 1481px) {
+    main{
+        flex-direction: row;
+    }
+    .name-skills {
+        text-align: center;
+        justify-content: start;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+    }
+    .name-title {
+        text-align: left;
+    }
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+    }
+    .skills {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .picture-showcase {
+        display: block;
+    }
+    /* hi-res laptops and desktops */
+}

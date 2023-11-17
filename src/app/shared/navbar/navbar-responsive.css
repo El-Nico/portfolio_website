@@ -1,0 +1,143 @@
+
+@media (min-width: 300px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        display: block;
+    }
+    ul>li{
+        min-width: 55px;
+    }
+    .navbars {
+        position: relative;
+    }
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        display: block;
+    }
+    ul>li{
+        min-width: 55px;
+    }
+    .navbars {
+        position: relative;
+    }
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        display: block;
+    }
+    ul>li{
+        min-width: 55px;
+    }
+    .navbars {
+        position: relative;
+    }
+    
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links-mobile {
+        display: none;
+    }
+    ul>li{
+        min-width: 90px;
+    }
+    .navbars {
+        position: fixed;
+    }
+    
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+    .nav-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links-mobile {
+        display: none;
+    }
+    ul>li{
+        min-width: 90px;
+    }
+    .navbars {
+        position: fixed;
+    }
+    
+    /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+    .nav-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links-mobile {
+        display: none;
+    }
+    ul>li{
+        min-width: 90px;
+    }
+    .navbars {
+        position: fixed;
+    }
+    
+    /* hi-res laptops and desktops */
+}
+@media (min-width: 1481px) {
+    .nav-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-links-mobile {
+        display: none;
+    }
+    ul>li{
+        min-width: 90px;
+    }
+    .navbars {
+        position: fixed;
+    }
+    
+    /* hi-res laptops and desktops */
+}

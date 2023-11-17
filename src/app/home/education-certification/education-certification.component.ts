@@ -2,6 +2,8 @@ import { Component, OnInit, inject } from '@angular/core';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
+import AOS from "aos";
+
 interface eduCertItem {
   title: string,
   rank: number,
@@ -25,6 +27,7 @@ export class EducationCertificationComponent implements OnInit {
     this.eduCertItems$ = collectionData(itemCollection);
   }
   ngOnInit(): void {
+    AOS.init();
     this.eduCertItems$.subscribe(items => {
       this.eduCertItems = items
     })

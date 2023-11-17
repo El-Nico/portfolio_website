@@ -1,8 +1,8 @@
-<div class="page background-medium">
-    <div class="page-container">
-        <header><h1>Education|Certification</h1></header>
-        <main class="background-light p-1">
-            <div class="edu-cert-item" *ngFor="let item of eduCertItems">
+<div class="page background-gray">
+    <div class="padding-container">
+        <header data-aos="fade-in" data-aos-duration="2000"><h1>Education | Certification</h1></header>
+        <main class="" data-aos="fade-in" data-aos-duration="2000">
+            <div class="edu-cert-item card-standard" *ngFor="let item of eduCertItems">
                 <app-edu-cert-item [item]="item"></app-edu-cert-item>
             </div>
         </main>

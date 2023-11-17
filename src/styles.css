@@ -19,6 +19,14 @@
   --tech-color: #009cff;
 }
 
+.primary-hover:hover {
+  color: var(--main-colour) !important;
+  transition: all 0.5s;
+}
+
+.btn-standard {
+  border-radius: 10px;
+}
 /* ***********RESET******************** */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -83,19 +91,24 @@
 }
 
 main, nav, section, div, footer, header{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     text-align: center;
 }
 
 ul{
-  border: 2px green solid;
+  /* border: 2px green solid; */
 }
 
 ul>li{
-  border: 1px solid lightblue;
+  /* border: 1px solid lightblue; */
 }
 
 
+.padding-container {
+  width: 100%;
+  max-width: var(--website-width);
+  margin: auto;
+}
 .page-container{
   width: 100%;
   max-width: var(--website-width);
@@ -133,6 +146,31 @@ ul {
 }
 .background-medium, .bg-medium{
   background: var(--medium-colour);
+}
+
+.background-gray {
+  background: #f8f8f8!important;
+}
+
+.background-gradient {
+  background: linear-gradient(90deg,#1e273e 0%,#0f172a 100%);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+
+.card-standard {
+  box-shadow: 0 4px 8px #0003;
+  transition: 0.3s;
+  border-radius: 14px;
+  margin: 0px 1px 1px 1px;
+  background-color: white;
 }
 
 .background-main, .bg-primary {
