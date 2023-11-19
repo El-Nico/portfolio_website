@@ -5,7 +5,7 @@ import { faBriefcase, faGraduationCap, faHome, faNewspaper, faPhone, faUser } fr
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css', './home.responsive.css']
 })
 export class HomeComponent {
   faHome = faHome;

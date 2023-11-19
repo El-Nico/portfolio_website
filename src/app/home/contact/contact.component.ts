@@ -5,7 +5,7 @@ import AOS from "aos";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css', './contact-responsive.css']
 })
 export class ContactComponent {
   isSubmitted = false;

@@ -20,9 +20,17 @@
     }
     .skills {
         margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
     }
     .picture-showcase {
         display: none;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 12px;
     }
     /* smartphones, iPhone, portrait 480x320 phones */
 }
@@ -52,9 +60,16 @@
     .skills {
         margin-top: 20px;
         text-align: center;
+        font-size: 12px;
     }
     .picture-showcase {
         display: none;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 12px;
     }
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
@@ -84,9 +99,16 @@
     .skills {
         margin-top: 20px;
         text-align: center;
+        font-size: 12px;
     }
     .picture-showcase {
         display: none;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 12px;
     }
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
@@ -116,9 +138,16 @@
     .skills {
         margin-top: 20px;
         text-align: center;
+        font-size: 18px;
     }
     .picture-showcase {
         display: none;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 12px;
     }
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
@@ -148,9 +177,16 @@
     .skills {
         margin-top: 30px;
         text-align: left;
+        font-size: 18px;
     }
     .picture-showcase {
         display: block;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 18px;
     }
     /* big landscape tablets, laptops, and desktops */
 }
@@ -179,9 +215,16 @@
     .skills {
         margin-top: 30px;
         text-align: left;
+        font-size: 18px;
     }
     .picture-showcase {
         display: block;
+    }
+    .padding-container {
+        padding: 20px;
+    }
+    .btn-small {
+        font-size: 18px;
     }
     /* hi-res laptops and desktops */
 }
@@ -210,9 +253,16 @@
     .skills {
         margin-top: 30px;
         text-align: left;
+        font-size: 18px;
+    }
+    .btn-small {
+        font-size: 18px;
     }
     .picture-showcase {
         display: block;
+    }
+    .padding-container {
+        padding: 20px;
     }
     /* hi-res laptops and desktops */
 }
