@@ -1,12 +1,15 @@
 <div class="page background-light">
     <div class="padding-container">
-        <header><h1 class="section-title" data-aos="fade-in" data-aos-duration="2000">Contact Me</h1></header>
+        <header><h1 class="section-title" data-aos="fade-in" data-aos-duration="2000">Contact Me</h1>
+            
+            <mat-progress-spinner mode="indeterminate" *ngIf="sending" style="margin-inline: auto;"></mat-progress-spinner>
+        </header>
         <!-- <div class="bottom-line"></div>
         <p class="lead">Here's how to reach me</p> -->
 
         <main class="" data-aos="fade-in" data-aos-duration="2000">
             <form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-                <div class="text-fields">
+                <div class="text-fields" *ngIf="!sending">
 
                     <div class="name-input">
                         <!-- <label for="name">Name</label><br> -->

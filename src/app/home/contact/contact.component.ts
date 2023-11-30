@@ -20,6 +20,7 @@ export class ContactComponent {
 
   
   isSubmitted = false;
+  sending=false;
   contactForm = this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
@@ -39,20 +40,24 @@ export class ContactComponent {
   checkInvalid(formControl: string): boolean {
     //this is more error specific and can provide targeted error message to span
     // return (this.contactForm.get(formControl)?.hasError('required') &&
-    return (this.contactForm.get(formControl)?.invalid &&
-      (this.contactForm.get(formControl)?.dirty ||
-        this.contactForm.get(formControl)?.touched) || this.isSubmitted) || false
+    return ((this.contactForm.get(formControl)?.invalid && 
+          ((this.contactForm.get(formControl)?.dirty || this.contactForm.get(formControl)?.touched) || this.isSubmitted)) 
+    || false)
   }
 
   onSubmit() {
     this.isSubmitted = true
     if(!this.contactForm.valid){
-      alert('invalid field in form, pls check again')
+      // alert('invalid field in form, pls check again')
       return
     }
     const message=this.contactForm.value as Message
-    console.log('submitted form', message)
+  this.sending=true;
     this.addMessage(message).then((documentReference:DocumentReference)=>{
+
+this.sending=false;
+this.isSubmitted=false;
+this.contactForm.reset();
 alert('message sent, thanks!')
     })
   }
