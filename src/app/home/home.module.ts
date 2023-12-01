@@ -16,6 +16,7 @@ import { ProjExpItemComponent } from './projects-experience/proj-exp-item/proj-e
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
@@ -41,6 +42,7 @@ import { SwiperModule } from 'swiper/angular';
     DragDropModule,
     MatTooltipModule,
     SwiperModule,
+    MatProgressSpinnerModule
   ]
 })
 export class HomeModule { }
