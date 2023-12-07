@@ -1,44 +1,69 @@
 <div class="navbars background-gradient" [class]="bgMode">
     <div class="page">
-        <nav class="">
+        <nav class>
             <div class="nav-container">
-                <img src="../../../assets/logo.png" alt="My Portfolio logo" style="cursor: pointer;" [routerLink]="['/home']"
+                <img src="../../../assets/logo.png" alt="My Portfolio logo"
+                    style="cursor: pointer;" [routerLink]="['/home']"
                     id="logo">
 
                 <div class="nav-links">
                     <ul>
-                        <li><a class="primary-hover" [routerLink]="['/home']"><fa-icon [icon]="faHome" style="margin-right: 4px;"></fa-icon> Home</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="about"><fa-icon [icon]="faUser" style="margin-right: 4px;"></fa-icon> About</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"><fa-icon
+                                    [icon]="faHome" style="margin-right: 4px;"></fa-icon>
+                                Home</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="about"><fa-icon [icon]="faUser"
+                                    style="margin-right: 4px;"></fa-icon> About</a></li>
                         <!-- <li><a class="primary-hover" [routerLink]="['/home']"
                                 fragment="education-certification"><fa-icon [icon]="faSchool" style="margin-right: 4px;"></fa-icon> Education/Certification</a></li> -->
                         <li><a class="primary-hover" [routerLink]="['/home']"
-                                fragment="projects-experience"><fa-icon [icon]="faProject" style="margin-right: 4px;"></fa-icon> Projects/Experience</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="articles"><fa-icon [icon]="faNewspaper" style="margin-right: 4px;"></fa-icon> Articles</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="contact"><fa-icon [icon]="faPhone" style="margin-right: 4px;"></fa-icon> Contact</a></li>
+                                fragment="projects-experience"><fa-icon
+                                    [icon]="faProject"
+                                    style="margin-right: 4px;"></fa-icon>
+                                Projects</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="articles"><fa-icon
+                                    [icon]="faNewspaper"
+                                    style="margin-right: 4px;"></fa-icon>
+                                Articles</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="contact"><fa-icon [icon]="faPhone"
+                                    style="margin-right: 4px;"></fa-icon>
+                                Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="nav-links-mobile">
                     <ul>
-                        <li><a class="primary-hover" [routerLink]="['/home']" [matTooltip]="'Home'" [matTooltipPosition]="'below'">
-                            <fa-icon [icon]="faHome"></fa-icon>
-                        </a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="about" [matTooltip]="'About'" [matTooltipPosition]="'below'">
-                            <fa-icon [icon]="faUser"></fa-icon></a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                [matTooltip]="'Home'"
+                                [matTooltipPosition]="'below'">
+                                <fa-icon [icon]="faHome"></fa-icon>
+                            </a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="about" [matTooltip]="'About'"
+                                [matTooltipPosition]="'below'">
+                                <fa-icon [icon]="faUser"></fa-icon></a></li>
                         <!-- <li><a class="primary-hover" [routerLink]="['/home']" [matTooltip]="'Education/Certification'" [matTooltipPosition]="'below'"
                                 fragment="education-certification">
                                 <fa-icon [icon]="faSchool"></fa-icon>
                             </a></li> -->
-                        <li><a class="primary-hover" [routerLink]="['/home']" [matTooltip]="'Projects/Experience'" [matTooltipPosition]="'below'"
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                [matTooltip]="'Projects/Experience'"
+                                [matTooltipPosition]="'below'"
                                 fragment="projects-experience">
                                 <fa-icon [icon]="faProject"></fa-icon>
                             </a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="articles" [matTooltip]="'Articles'" [matTooltipPosition]="'below'">
-                            <fa-icon [icon]="faNewspaper"></fa-icon>
-                        </a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="contact" [matTooltip]="'Contact'" [matTooltipPosition]="'below'">
-                            <fa-icon [icon]="faPhone"></fa-icon>
-                        </a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="articles" [matTooltip]="'Articles'"
+                                [matTooltipPosition]="'below'">
+                                <fa-icon [icon]="faNewspaper"></fa-icon>
+                            </a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']"
+                                fragment="contact" [matTooltip]="'Contact'"
+                                [matTooltipPosition]="'below'">
+                                <fa-icon [icon]="faPhone"></fa-icon>
+                            </a></li>
                     </ul>
                 </div>
             </div>
