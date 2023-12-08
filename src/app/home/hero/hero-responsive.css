@@ -1,7 +1,7 @@
 
 @media (min-width: 300px) {
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 100px;
     }
     .name-skills {
@@ -23,9 +23,9 @@
         text-align: center;
         font-size: 12px;
     }
-    .picture-showcase {
+    /* .picture-showcase {
         display: none;
-    }
+    } */
     .padding-container {
         padding: 20px;
     }
@@ -36,7 +36,7 @@
 }
 @media (min-width: 481px) {
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 100px;
     }
     .name-skills {
@@ -62,9 +62,9 @@
         text-align: center;
         font-size: 12px;
     }
-    .picture-showcase {
+    /* .picture-showcase {
         display: none;
-    }
+    } */
     .padding-container {
         padding: 20px;
     }
@@ -75,7 +75,7 @@
 }
 @media (min-width: 641px) {
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 100px;
     }
     .name-skills {
@@ -101,9 +101,9 @@
         text-align: center;
         font-size: 12px;
     }
-    .picture-showcase {
+    /* .picture-showcase {
         display: none;
-    }
+    } */
     .padding-container {
         padding: 20px;
     }
@@ -114,7 +114,7 @@
 }
 @media (min-width: 961px) {
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 100px;
     }
     .name-skills {
@@ -132,7 +132,7 @@
         line-height: 28px;
     }
     img {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
     .skills {
@@ -140,9 +140,9 @@
         text-align: center;
         font-size: 18px;
     }
-    .picture-showcase {
+    /* .picture-showcase {
         display: none;
-    }
+    } */
     .padding-container {
         padding: 20px;
     }
@@ -154,6 +154,7 @@
 @media (min-width: 1025px) {
     main{
         flex-direction: row;
+        justify-content: center;
         padding-top: 100px;
     }
     .name-skills {
@@ -171,7 +172,7 @@
         line-height: 42px;
     }
     img {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
     .skills {
@@ -193,6 +194,7 @@
 @media (min-width: 1281px) {
     main{
         flex-direction: row;
+        justify-content: center;
     }
     .name-skills {
         text-align: center;
@@ -209,7 +211,7 @@
         line-height: 42px;
     }
     img {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
     .skills {
@@ -231,6 +233,7 @@
 @media (min-width: 1481px) {
     main{
         flex-direction: row;
+        justify-content: center;
     }
     .name-skills {
         text-align: center;
@@ -247,7 +250,7 @@
         line-height: 42px;
     }
     img {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
     .skills {
