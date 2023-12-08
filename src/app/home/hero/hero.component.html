@@ -1,7 +1,8 @@
 <div class="page background-gradient">
     <div class="padding-container">
         <main>
-            <div class="name-skills" data-aos="fade-right" data-aos-duration="2000">
+            <div class="name-skills" data-aos="fade-right"
+                data-aos-duration="2000">
 
                 <div class="name-title">
                     <h1>Nicholas Chibuike-Eruba </h1>
@@ -13,9 +14,12 @@
                 <div class="skills">
                     <p>I have experience in...</p>
                     <ul>
-                        <li><a href="#">Data Analysis</a></li>
-                        <li><a href="#">Machine Learning</a></li>
-                        <li><a href="#">Web Development</a></li>
+                        <li><a [routerLink]="['/articles','data-analysis']">Data
+                                Analysis</a></li>
+                        <li><a [routerLink]="['/articles','machine-learning']">Machine
+                                Learning</a></li>
+                        <li><a [routerLink]="['/articles','web-dev']">Web
+                                Development</a></li>
                     </ul>
                 </div>
 
@@ -26,16 +30,20 @@
 
                     <div class="action-button">
                         <a [routerLink]="['/articles','tutorial-showcaser']"
-                            class="btn-standard btn-small btn btn-main">Tutorial Showcaser</a>
-                        <a href="#" class="btn-standard btn-small btn btn-light">Download CV</a>
+                            class="btn-standard btn-small btn btn-main">Project
+                            Showcaser App</a>
+                        <a href="#" class="btn-standard btn-small btn btn-light">Download
+                            CV</a>
                         <a href="https://github.com/El-Nico"
-                                target="_blank" class="btn-standard btn-small btn btn-light">Go
-                                to
-                                Github</a>
+                            target="_blank"
+                            class="btn-standard btn-small btn btn-light">Go
+                            to
+                            Github</a>
                     </div>
                 </div>
             </div>
-            <div class="picture-showcase" data-aos="fade-left" data-aos-duration="2000">
+            <div class="picture-showcase" data-aos="fade-left"
+                data-aos-duration="2000">
 
                 <div class="image-box">
                     <img

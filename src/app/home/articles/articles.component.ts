@@ -92,7 +92,6 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
       this.articleItems = items.sort((a, b) => {
         return a.rank - b.rank
       })
-      console.log(this.articleItems)
     })
 
 
