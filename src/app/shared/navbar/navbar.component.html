@@ -34,16 +34,17 @@
                 </div>
 
                 <div class="nav-links-mobile">
-                    <ul>
+                    <img src="assets/menu.svg" (click)="toggleDropdownMenu()"/>
+                    <ul *ngIf="isDropdownMenuOpen">
                         <li><a class="primary-hover" [routerLink]="['/home']"
                                 [matTooltip]="'Home'"
                                 [matTooltipPosition]="'below'">
-                                <fa-icon [icon]="faHome"></fa-icon>
+                                Home
                             </a></li>
                         <li><a class="primary-hover" [routerLink]="['/home']"
                                 fragment="about" [matTooltip]="'About'"
                                 [matTooltipPosition]="'below'">
-                                <fa-icon [icon]="faUser"></fa-icon></a></li>
+                                About Me</a></li>
                         <!-- <li><a class="primary-hover" [routerLink]="['/home']" [matTooltip]="'Education/Certification'" [matTooltipPosition]="'below'"
                                 fragment="education-certification">
                                 <fa-icon [icon]="faSchool"></fa-icon>
@@ -52,17 +53,17 @@
                                 [matTooltip]="'Projects/Experience'"
                                 [matTooltipPosition]="'below'"
                                 fragment="projects-experience">
-                                <fa-icon [icon]="faProject"></fa-icon>
+                                Projects
                             </a></li>
                         <li><a class="primary-hover" [routerLink]="['/home']"
                                 fragment="articles" [matTooltip]="'Articles'"
                                 [matTooltipPosition]="'below'">
-                                <fa-icon [icon]="faNewspaper"></fa-icon>
+                                Articles
                             </a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']"
+                        <li><a class="primary-hover chat" [routerLink]="['/home']"
                                 fragment="contact" [matTooltip]="'Contact'"
                                 [matTooltipPosition]="'below'">
-                                <fa-icon [icon]="faPhone"></fa-icon>
+                                Let's Chat!
                             </a></li>
                     </ul>
                 </div>
