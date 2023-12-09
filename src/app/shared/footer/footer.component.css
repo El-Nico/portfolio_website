@@ -1,102 +1,100 @@
-main{
-    display: grid;
-    /* justify-content: center; */
-    grid-template-columns: repeat(auto-fill, 1fr);
+main {
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: repeat(auto-fill, 1fr);
 }
 
-.footer-grid{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    /* align-items: center; */
-    
-/* #0d0d0d
+.footer-grid {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* align-items: center; */
+
+  /* #0d0d0d
 #1a1a1a
 #262626
 #333333
 #404040
 #4d4d4d
 #595959 */
-    /* background: #4d4d4d; */
-    /* place-content: center; */
+  /* background: #4d4d4d; */
+  /* place-content: center; */
 }
 
-a{
-    color: #fff;
-    padding: 0.2rem;
-    display: inline;
+a {
+  color: #fff;
+  padding: 0.2rem;
+  display: inline;
 }
 
-a>fa-icon{
-    color: var(--main-colour);
-    font-size: 1.2rem;
+a > fa-icon {
+  color: var(--main-colour);
+  font-size: 1.2rem;
 }
 
-.socials{
-display: grid;
-grid-auto-flow: column;
-grid-template-columns:  repeat(auto-fit, minmax(0, max-content));
-place-content: start;
-place-items: center;
-gap: 0.2rem;
+.socials {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+  place-content: start;
+  place-items: center;
+  gap: 0.2rem;
 }
 
-.socials:first-child{
-    margin-left: 1rem;
+.socials:first-child {
+  margin-left: 1rem;
 }
-.socials:last-child{
-    margin-right: 1rem;
+.socials:last-child {
+  margin-right: 1rem;
 }
 
-
+.socials a:hover {
+  opacity: 0.4;
+}
 
 .copyright {
-text-align: right;;
+  text-align: right;
 }
 
-.copyright p{
-    margin: 0 1rem;
+.copyright p {
+  margin: 0 1rem;
 }
 
-.copyright p a{
-    color: #e6a900 ;
-    cursor: pointer;
+.copyright p a {
+  color: #e6a900;
+  cursor: pointer;
 }
 
-.copyright a:hover{
-    opacity: 0.4;
+.copyright a:hover {
+  opacity: 0.4;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (max-width : 600px) {
-/* Styles */
-.footer-grid{
+@media only screen and (max-width: 600px) {
+  /* Styles */
+  .footer-grid {
     flex-direction: column;
     /* place-content: center; */
-}
+  }
 
-.socials:first-child{
+  .socials:first-child {
     margin: 0;
-}
-.socials:last-child{
+  }
+  .socials:last-child {
     margin: 0;
-}
+  }
 
-.socials{
+  .socials {
     width: 100%;
     place-content: center;
     /* transform: translateX(-5rem); */
-    
-}
+  }
 
-.copyright {
+  .copyright {
     text-align: center;
+  }
 }
-}
- 
-

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-proj-exp-item',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./proj-exp-item.component.css']
 })
 export class ProjExpItemComponent {
-
+  @Input() project: any;
 }

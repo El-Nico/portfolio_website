@@ -1,85 +1,63 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-// import { faStar } from '@fortawesome/free-regular-svg-icons';
-// import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-// import { Subscription } from 'rxjs';
-import { ModalService } from 'src/app/shared/modal.service';
-// import { ScrollResizeService } from 'src/app/shared/scroll-resize.service';
-
+import { Component, OnInit, inject } from '@angular/core';
+import { Firestore, collectionData } from '@angular/fire/firestore';
+import { collection } from 'firebase/firestore';
+import { Observable } from 'rxjs';
 import Swiper, { Autoplay, Navigation, Pagination, Virtual } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, Virtual]);
+
+// interface Project {
+//   title: string
+//   desc: string
+// }
 
 @Component({
   selector: 'app-projects-experience',
   templateUrl: './projects-experience.component.html',
   styleUrls: ['./projects-experience.component.css']
 })
-export class ProjectsExperienceComponent implements OnInit, AfterViewInit {
+export class ProjectsExperienceComponent implements OnInit {
 
-  // @ViewChild('mainContainer', { static: false })
-  // mainContainer!: ElementRef;
-  // @ViewChild('header', { static: false })
-  // header!: ElementRef;
-  // @ViewChild('projectLinks', { static: false })
-  // projectLinks!: ElementRef;
+  projects$: Observable<any[]>
+  projects: any[] = [];
+  firestore: Firestore = inject(Firestore);
 
-  // bodyText = 'This text can be updated in modal 1';
+  loadingProjects = true;
 
   breakpoints = {
     1200: {
-        slidesPerView: 4
+      slidesPerView: 4
     },
     992: {
-        slidesPerView: 3
+      slidesPerView: 3
     },
     640: {
-        slidesPerView: 2
+      slidesPerView: 2
     },
     480: {
-        slidesPerView: 1
+      slidesPerView: 1
     },
     300: {
-        slidesPerView: 1
+      slidesPerView: 1
     }
-}
+  }
 
-  // faStar = faStar;
-  // faChevronLeft = faChevronLeft
-  // faChevronRight = faChevronRight
 
-  // item: any = {
-  //   cardClasses: ['card']
-  // }
-
-  // subCompHeight = 0;
-  // subCompHeightSubscription!: Subscription
 
   constructor(
-    // protected modalService: ModalService,
-    // private scrollResizeService: ScrollResizeService
-    ) {
-
+  ) {
+    const projectsCollection = collection(this.firestore, 'projects')
+    this.projects$ = collectionData(projectsCollection)
   }
 
-  // getMainHeight() {
-  //   console.log(`calc(${this.scrollResizeService.pageContainerMaxHeight} - ${this.subCompHeight}px)`)
-  //   return {
-
-  //     maxHeight: `calc(${this.scrollResizeService.pageContainerMaxHeight} - ${this.subCompHeight}px)`
-  //   }
-  // }
-
-  ngAfterViewInit(): void {
-
-    // this.subCompHeightSubscription = this.scrollResizeService.getsubCompHeight([this.header, this.projectLinks])
-    //   .subscribe(height => {
-    //     // console.log(height)
-    //     this.subCompHeight = height
-    //     this.getMainHeight();
-    //   });
+  ngOnInit(): void {
+    this.projects$.subscribe(projects => {
+      this.projects = projects.sort((a, b) => {
+        return a.rank - b.rank
+      })
+      console.log(projects, this.loadingProjects)
+      this.loadingProjects = false
+    })
   }
-
-
-  ngOnInit(): void { }
 
   ngOnDestroy() {
     // this.subCompHeightSubscription.unsubscribe()

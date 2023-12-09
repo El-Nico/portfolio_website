@@ -1,8 +1,19 @@
 
-<div>
-    <img
-        src="https://source.unsplash.com/random/200x200?react,code,design/"
-        alt="carousel-img" class="">
-    <h3>Tutorial Showcaser</h3>
-    <p><span>React</span>,<span>Firebase functions</span></p>
+<div class="card-standard color-black project-card">
+    <div class="image-star-rating">
+        <img
+            [src]=project.imgUrl
+            alt="carousel-img">
+        <div class="item-container">
+            <h3 class="project-title"
+                [routerLink]="'/articles/'+project.id"
+                routerLinkActive="router-link-active">{{project.title}}</h3>
+
+        </div>
+    </div>
+    <div class="desc-container">
+        <div class="text-desc">
+            <p>{{project.desc}}</p>
+        </div>
+    </div>
 </div>

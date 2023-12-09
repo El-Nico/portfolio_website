@@ -31,6 +31,11 @@ for 3rem get page-container height
 
 on resize event update calculation
 
+get template from internet for about and for articles
+
+react angular
+ML/AI/Data
+
 https://stackoverflow.com/questions/35527456/angular-window-resize-event
 
 DARK MODE
