@@ -2,7 +2,8 @@
 @media (min-width: 300px) {
     main{
         flex-direction: column-reverse;
-        padding-top: 100px;
+        padding-top: 20px;
+        gap: 2vh;
     }
     .name-skills {
         text-align: center;
@@ -15,8 +16,8 @@
         text-align: center;
     }
     img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 400px;
     }
     .skills {
         margin-top: 20px;
@@ -37,7 +38,8 @@
 @media (min-width: 481px) {
     main{
         flex-direction: column-reverse;
-        padding-top: 100px;
+        padding-top: 0px;
+        gap: 2vh;
     }
     .name-skills {
         text-align: center;
@@ -54,8 +56,8 @@
         line-height: 28px;
     }
     img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 450px;
     }
     .skills {
         margin-top: 20px;
@@ -76,7 +78,8 @@
 @media (min-width: 641px) {
     main{
         flex-direction: column-reverse;
-        padding-top: 100px;
+        padding-top: 0px;
+        gap: 0;
     }
     .name-skills {
         text-align: center;
@@ -93,8 +96,8 @@
         line-height: 28px;
     }
     img {
-        width: 200px;
-        height: 200px;
+        width: 100%;
+        height: 500px;
     }
     .skills {
         margin-top: 20px;
@@ -133,7 +136,7 @@
     }
     img {
         width: 100%;
-        height: 500px;
+        height: 470px;
     }
     .skills {
         margin-top: 20px;

@@ -15,5 +15,12 @@ export class NavbarComponent {
   faNewspaper = faNewspaper;
   faPhone = faPhone;
   faProject = faBriefcase;
+  isDropdownMenuOpen = false;
   @Input() bgMode: string = 'none'
+
+  toggleDropdownMenu(){
+    
+    this.isDropdownMenuOpen = !this.isDropdownMenuOpen
+    console.log(this.isDropdownMenuOpen)
+  }
 }
