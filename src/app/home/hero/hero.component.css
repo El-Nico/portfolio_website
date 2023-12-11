@@ -140,6 +140,11 @@ img{
             font-size: clamp(1rem, 1vw, 2.5rem);
             display: flex; 
             gap: 5px;
+
+            > *{
+                position: relative;
+                left: -10px;
+            }
         }
 
         > .projects{
@@ -172,6 +177,8 @@ img{
 
     .skills{
 
+        width: 100%;
+
         >.hero-buttons:nth-child(1){
 
             flex-direction: column;
@@ -180,11 +187,16 @@ img{
             
             > .cv{
                 justify-content: center;
+                padding: 1.5vh 3vw;
 
                 > *{
                     position: relative;
                     left: -10px;
                 }
+            }
+
+            > .chat{
+                padding: 1.5vh 3vw;
             }
         }
     }

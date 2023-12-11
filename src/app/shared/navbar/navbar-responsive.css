@@ -3,6 +3,7 @@
     .nav-container{
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
     }
     .nav-links {
@@ -12,7 +13,7 @@
         display: block;
 
         > ul{
-            background: linear-gradient(90deg,#1e273e 0%,#0f172a 100%);
+            background-color: #10182B;
             position: absolute;
             left: 0;
             top: 45px;
@@ -42,6 +43,11 @@
     .navbars {
         position: relative;
     }
+
+    .chat{
+        display: none;
+    }
+
     /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width: 481px) {
@@ -80,7 +86,7 @@
     .nav-container{
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        
     }
     .nav-links {
         display: block;
@@ -106,6 +112,17 @@
     .navbars {
         position: relative;
     }
+    .chat{
+        display: block;
+        background-color: #FFBC00;
+        padding: 1vh 50px;
+        font-weight: 600;
+        border-radius: 40px;
+        box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
+        -webkit-box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
+        font-size: 1rem;
+    }
     
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
@@ -113,7 +130,8 @@
     .nav-container{
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        gap: 10vw;
     }
     .nav-links {
         display: block;

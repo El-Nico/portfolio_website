@@ -8,30 +8,15 @@
 
                 <div class="nav-links">
                     <ul>
-                        <li><a class="primary-hover" [routerLink]="['/home']"><fa-icon
-                                    [icon]="faHome" style="margin-right: 4px;"></fa-icon>
-                                Home</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']"
-                                fragment="about"><fa-icon [icon]="faUser"
-                                    style="margin-right: 4px;"></fa-icon> About</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']">Home</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="about">About</a></li>
                         <!-- <li><a class="primary-hover" [routerLink]="['/home']"
                                 fragment="education-certification"><fa-icon [icon]="faSchool" style="margin-right: 4px;"></fa-icon> Education/Certification</a></li> -->
-                        <li><a class="primary-hover" [routerLink]="['/home']"
-                                fragment="projects-experience"><fa-icon
-                                    [icon]="faProject"
-                                    style="margin-right: 4px;"></fa-icon>
-                                Projects</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']"
-                                fragment="articles"><fa-icon
-                                    [icon]="faNewspaper"
-                                    style="margin-right: 4px;"></fa-icon>
-                                Articles</a></li>
-                        <li><a class="primary-hover" [routerLink]="['/home']"
-                                fragment="contact"><fa-icon [icon]="faPhone"
-                                    style="margin-right: 4px;"></fa-icon>
-                                Contact</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="projects-experience">Projects</a></li>
+                        <li><a class="primary-hover" [routerLink]="['/home']" fragment="articles">Articles</a></li>
                     </ul>
                 </div>
+                <a class="chat" [routerLink]="['/home']" fragment="contact">Let's Chat!</a>
 
                 <div class="nav-links-mobile">
                     <img src="assets/menu.svg" (click)="toggleDropdownMenu()"/>
