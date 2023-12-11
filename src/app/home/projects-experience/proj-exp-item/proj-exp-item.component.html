@@ -8,12 +8,11 @@
             <h3 class="project-title"
                 [routerLink]="'/articles/'+project.id"
                 routerLinkActive="router-link-active">{{project.title}}</h3>
-
         </div>
     </div>
     <div class="desc-container">
         <div class="text-desc">
-            <p>{{project.desc}}</p>
+            <p style="text-overflow: ellipsis;">{{project.desc}}</p>
         </div>
     </div>
 </div>

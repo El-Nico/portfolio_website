@@ -13,9 +13,8 @@ h3{
 .nav-container{
     margin-top: 10px;
     display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: space-between;
+    padding:0.5vw 3vw;
+    justify-content: center;
     flex-direction: row;
     align-items: center;;
     /* display: grid;
@@ -49,7 +48,7 @@ ul{
 
 ul li a{
     color: #fff;
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
     /* border-bottom: 3px transparent solid;
     padding: .5rem 0.75rem;
     transition: border-color 0.5s; */
