@@ -11,6 +11,17 @@
   text-decoration: underline;
 }
 
+.image-star-rating{
+
+  > img {
+    height: 30vh;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+
 /* .project-card {
   height: 60vh;
 } */

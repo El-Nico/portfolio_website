@@ -23,9 +23,13 @@
                     [direction]="'horizontal'"
                     [loop]="true"
                     [centeredSlides]="true"
-                    [speed]="0" 
+                    [speed]="2000" 
                     [allowTouchMove]="true"
-                    [autoplay]="{ delay: 0, disableOnInteraction: false }">
+                    [enabled]="true"
+                    [autoplay]="true"
+                    [rewind]="true"
+                    class="swiper-custom"
+                    >
                     <ng-container *ngFor="let project of projects">
                         <ng-template swiperSlide>
                             <app-proj-exp-item [project]="project"></app-proj-exp-item>
