@@ -16,13 +16,14 @@
                 *ngIf="loadingProjects"
                 style="margin-inline: auto;"></mat-progress-spinner>
             <div class="container-swiper">
+                <!-- put the speed back in 5000 -->
                 <swiper
                     [breakpoints]="breakpoints"
                     [spaceBetween]="30"
                     [direction]="'horizontal'"
                     [loop]="true"
                     [centeredSlides]="true"
-                    [speed]="5000"
+                    [speed]="0" 
                     [allowTouchMove]="true"
                     [autoplay]="{ delay: 0, disableOnInteraction: false }">
                     <ng-container *ngFor="let project of projects">
