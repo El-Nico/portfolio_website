@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /* You can add global styles to this file, and also import other style files */
 /* ***********VARIABLES******************** */
-:root{
+:root {
   --website-width: 1280px;
-  --dark-colour:#333;
+  --dark-colour: #333;
   --main-colour: #ffbc00;
   --secondary-colour: #ff3d00;
   /* --light-colour: #f4f4f4; */
@@ -11,7 +11,7 @@
   --medium-colour: #ccc;
   /* --medium-colour:#f4f4f4; */
 
-  --page-container-max-height:calc(100vh - 3rem);
+  --page-container-max-height: calc(100vh - 3rem);
 }
 
 .category {
@@ -32,85 +32,110 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  /*
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
-  body {
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    background: #fff;
-  }
-  /*
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+/*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    /* max-width: 100%; */
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+/*
     6. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     8. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  html{
-    scroll-behavior: smooth;
-  }
-  /* **********END OF RESET************ */
-   main, nav, section, div, footer, header{
-    text-align: center;
+#root,
+#__next {
+  isolation: isolate;
 }
 
-main, nav, section, div, footer, header{
-    /* border: 1px red solid; */
-    text-align: center;
+img {
+  width: 100%;
 }
 
-ul{
+html {
+  scroll-behavior: smooth;
+}
+/* **********END OF RESET************ */
+main,
+nav,
+section,
+div,
+footer,
+header {
+  text-align: center;
+}
+
+main,
+nav,
+section,
+div,
+footer,
+header {
+  /* border: 1px red solid; */
+  text-align: center;
+}
+
+ul {
   /* border: 2px green solid; */
 }
 
-ul>li{
+ul > li {
   /* border: 1px solid lightblue; */
 }
-
 
 .padding-container {
   width: 100%;
   max-width: var(--website-width);
   margin: auto;
 }
-.page-container{
+.page-container {
   width: 100%;
   max-width: var(--website-width);
   margin: auto;
@@ -129,32 +154,35 @@ ul {
   list-style: none;
 }
 
-.sticky{
+.sticky {
   position: fixed;
   top: 0px;
 }
 
-.grid-col-span-2{
+.grid-col-span-2 {
   grid-column: span 2;
 }
 /* utility classes */
-.background-dark, .bg-dark{
+.background-dark,
+.bg-dark {
   background: var(--dark-colour) !important;
   /* color: #fff; */
 }
-.background-light, .bg-light{
+.background-light,
+.bg-light {
   background: var(--light-colour);
 }
-.background-medium, .bg-medium{
+.background-medium,
+.bg-medium {
   background: var(--medium-colour);
 }
 
 .background-gray {
-  background: #f8f8f8!important;
+  background: #f8f8f8 !important;
 }
 
 .background-gradient {
-  background-color: #10182B;
+  background-color: #10182b;
   /* background: linear-gradient(90deg,#1e273e 0%,#0f172a 100%); */
 }
 
@@ -166,7 +194,6 @@ ul {
   color: #000;
 }
 
-
 .card-standard {
   box-shadow: 0 4px 8px #0003;
   transition: 0.3s;
@@ -176,12 +203,14 @@ ul {
   height: 100%;
 }
 
-.background-main, .bg-primary {
+.background-main,
+.bg-primary {
   background: var(--main-color);
   color: #fff;
 }
 
-.background-highlighted, .bg-highlighted{
+.background-highlighted,
+.bg-highlighted {
   background: var(--main-colour) !important;
   /* background: yellow; */
   /* color: #fff; */
@@ -193,33 +222,45 @@ ul {
 }
 
 .bg-dark h1,
-  .bg-dark h2,
-  .bg-dark h3,
-  .bg-dark a,
-  .bg-dark p,
-  .bg-primary h1,
-  .bg-primary h2,
-  .bg-primary h3,
-  .bg-primary a,
-  .bg-secondary h1,
-  .bg-secondary h2,
-  .bg-secondary h3,
-  .bg-secondary a {
-    color: #fff !important; 
-  }
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-dark p,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff !important;
+}
 
-  /* utitlity paddign */
-  .py-1 { padding: 1.5rem 0 }
-  .py-2 { padding: 2rem 0 }
-  .py-3 { padding: 3rem 0 }
-  .p-1 { padding: 1.5rem }
-  .p-2 { padding: 2rem }
-  .p-3 { padding: 3rem }
-
+/* utitlity paddign */
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 
 /* buttons */
 
-button, .btn{
+button,
+.btn {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
@@ -227,7 +268,7 @@ button, .btn{
   cursor: pointer;
 }
 
-.btn-outline{
+.btn-outline {
   border: 2px solid black;
   /* border-color: #e7e7e7; */
 }
@@ -247,10 +288,16 @@ button, .btn{
   background-color: var(--dark-colour);
 }
 
-button[class^='btn-']:hover,
-a[class^='btn-']:hover,
-input[class^='btn-']:hover{
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
   background-color: var(--main-colour);
-} 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

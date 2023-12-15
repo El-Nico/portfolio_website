@@ -4,25 +4,35 @@
             <div class="name-skills" data-aos="fade-right"
                 data-aos-duration="2000">
 
-                <h2 style="font-weight: 400;">👋 Hi, I’m <span style="color: #6853EA;">Nicholas Chibuike-Eruba</span></h2>
-                
+                <h2 style="font-weight: 400;">👋 Hi, I’m <span
+                        style="color: #6853EA;">Nicholas Chibuike-Eruba</span></h2>
+
                 <h1>Software Developer</h1>
-                <h3 class="name-title">I’m currently taking Bsc. Computing and Information Technology, and I have experience in data analysis, machine learning, and web development</h3>
-               
+                <h3 class="name-title">I have recently graduated with a Bsc.
+                    Computing and
+                    Information Technology, and I have experience in data
+                    analysis, machine learning, and web development</h3>
 
                 <div class="skills">
                     <div class="hero-buttons">
-                        <a class="chat" href="#">Let's Chat!</a>
-                        <a class="cv" href="#">
-                            <img src="assets/download.svg" style="height: 25px; width: 40px;"/>
+                        <a class="chat" [routerLink]="['/home']"
+                            fragment="contact">Let's Chat!</a>
+                        <a class="cv"
+                            href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/personal%2FNicholas_Chibuike-Eruba_CV_2023.pdf?alt=media&token=15f407f1-4430-4ef9-b8cc-b44837038e56"
+                            target="_blank">
+                            <img src="assets/download.svg"
+                                style="height: 25px; width: 40px;" />
                             <span class="download">Download CV</span>
                         </a>
                     </div>
                     <div class="hero-buttons">
-                        <a href="https://github.com/El-Nico"><img src="assets/linkedin.svg"/></a>
-                        <a href="https://github.com/El-Nico"><img src="assets/github.svg"/></a>
-                        <a class="projects" href="#">My Projects</a>
-                    </div>  
+                        <a href="https://github.com/El-Nico"><img
+                                src="assets/linkedin.svg" /></a>
+                        <a href="https://github.com/El-Nico"><img
+                                src="assets/github.svg" /></a>
+                        <a class="projects" [routerLink]="['/home']"
+                            fragment="projects-experience">My Projects</a>
+                    </div>
                 </div>
             </div>
             <div class="picture-showcase" data-aos="fade-left"

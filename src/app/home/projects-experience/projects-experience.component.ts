@@ -54,7 +54,6 @@ export class ProjectsExperienceComponent implements OnInit {
       this.projects = projects.sort((a, b) => {
         return a.rank - b.rank
       })
-      console.log(projects, this.loadingProjects)
       this.loadingProjects = false
     })
   }

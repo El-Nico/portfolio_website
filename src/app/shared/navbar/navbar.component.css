@@ -1,76 +1,75 @@
-h3{
-    padding: 1rem;
+h3 {
+  padding: 1rem;
 }
-
 
 .navbars {
-    top: 0;
-    width: 100%;
-    padding-bottom: 10px;
-    box-shadow: 0 4px 8px #0003;
+  top: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px #0003;
 }
 
-.nav-container{
-    margin-top: 10px;
-    display: flex;
-    padding:0.5vw 3vw;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;;
-    /* display: grid;
+.nav-container {
+  margin-top: 10px;
+  display: flex;
+  padding: 0.5vw 3vw;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  /* display: grid;
     grid-template-columns: 1fr 4fr; */
 }
 
-#logo{
-    /* flex: 1;
+#logo {
+  /* flex: 1;
     align-self: center; */
-    width: 40px;
-    height: 40px;
-    color: #fff;
+  width: 40px;
+  height: 40px;
+  color: #fff;
 }
 
-
-.nav-links ul{  
-    gap: 20px;
+.nav-links ul {
+  gap: 20px;
 }
-.nav-links{
-    /* max-width: 100vw; */
-}
-
-
-ul{
-    justify-content: end;
-    display: flex;
-    /* flex-wrap: wrap; */
-    max-width: 100vw;
-
+.nav-links {
+  /* max-width: 100vw; */
 }
 
-ul li a{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    /* border-bottom: 3px transparent solid;
+ul {
+  justify-content: end;
+  display: flex;
+  /* flex-wrap: wrap; */
+  max-width: 100vw;
+}
+
+ul li a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  /* border-bottom: 3px transparent solid;
     padding: .5rem 0.75rem;
     transition: border-color 0.5s; */
-    cursor: pointer;
-    font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 
-    /* font-size: 0.75rem; */
+  /* font-size: 0.75rem; */
 }
 
-ul>li>a:hover{
-border-color: var(--medium-colour);
+ul > li > a:hover {
+  border-color: var(--medium-colour);
 }
 
-ul>li>a.current{
-    border-color: var(--main-colour);
+ul > li > a.current {
+  border-color: var(--main-colour);
+}
+
+.chat:hover {
+  background: #fed8b1;
+  transition: all 0.5s;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (max-width : 600px) {
-
-    #logo{
-        justify-self: center; 
-    }
+@media only screen and (max-width: 600px) {
+  #logo {
+    justify-self: center;
+  }
 }

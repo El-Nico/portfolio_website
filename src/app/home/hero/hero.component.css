@@ -1,203 +1,204 @@
-.page{
-    /* height: 100vh; */
-    /* padding-inline: 2rem;
-    display: grid; */
-    min-height: 100vh;
-    color: #fff;
-    padding: 10px;
-    display: flex;
+.page {
+  min-height: 100vh;
+  color: #fff;
+  padding: 10px;
+  display: flex;
 }
 
-main{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.title{
-    font-size: 22px;
+.title {
+  font-size: 22px;
 }
-.name-title, .skills{
-    text-align: left;
-    font-size: 18px;
+.name-title,
+.skills {
+  text-align: left;
+  font-size: 18px;
 }
 
 .btn-small {
-    padding: 10px;
+  padding: 10px;
 }
 
-.skills>ul{
-    display: flex;
+.skills > ul {
+  display: flex;
 }
 
-.skills>ul>li>a:first-child{
-    padding-left: 0;
+.skills > ul > li > a:first-child {
+  padding-left: 0;
 }
 
-
-.picture-showcase{
-    display: grid;
-    grid-auto-flow: row;
-    /* grid-template-rows: 1fr 1fr; */
-    /* align-items: center; */
+.picture-showcase {
+  display: grid;
+  grid-auto-flow: row;
+  /* grid-template-rows: 1fr 1fr; */
+  /* align-items: center; */
 }
-.image-box{
-    display: grid;
-    padding: 1rem;
+.image-box {
+  display: grid;
+  padding: 1rem;
 }
 
-img{
-    /* border-radius: 100%; */
-    /* border: 2px solid #fff; */
-    justify-self: center;
+img {
+  /* border-radius: 100%; */
+  /* border: 2px solid #fff; */
+  justify-self: center;
 }
 
 .action-button {
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
 }
 
-.checkout>ul{
-    display: flex;
+.checkout > ul {
+  display: flex;
 }
-.checkout>ul>li{
-   margin-inline: 0.5rem;
+.checkout > ul > li {
+  margin-inline: 0.5rem;
 }
 
-.checkout>ul>li>a{
-/* #b38400
+.checkout > ul > li > a {
+  /* #b38400
 #cc9600
 #e6a900 */
-    /* color: #e6a900 ;
+  /* color: #e6a900 ;
     font-weight: bold; */
-    padding-inline: 1rem;
-    padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.checkout>ul>li>a:first-child{
-    padding-left: 0;
+.checkout > ul > li > a:first-child {
+  padding-left: 0;
 }
 
 .name-skills {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 
-    > h1 {
-        font-size: clamp(1.7rem, 3.5vw, 4.3rem);
-    }
+  > h1 {
+    font-size: clamp(1.7rem, 3.5vw, 4.3rem);
+  }
 
-    > h2 {
-        font-size: clamp(1rem, 2vw, 1.8rem);
-    }
+  > h2 {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+  }
 
-    > h3{
-        font-size: clamp(1rem, 0.99vw, 2rem);
-    }
+  > h3 {
+    font-size: clamp(1rem, 0.99vw, 2rem);
+  }
 }
 
-.name-title{
-    width: 80%;
+.chat:hover {
+  background: #fed8b1;
 }
 
-.skills{
+.name-title {
+  width: 80%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  > .hero-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    > a {
+      > img {
+        height: 50px;
+      }
+    }
+
+    > .chat {
+      background-color: #ffbc00;
+      padding: 1.5vh 3vw;
+      font-weight: 600;
+      border-radius: 40px;
+      box-shadow: 0px 0px 35px 0px rgba(220, 242, 180, 0.21);
+      -webkit-box-shadow: 0px 0px 35px 0px rgba(220, 242, 180, 0.21);
+      -moz-box-shadow: 0px 0px 35px 0px rgba(220, 242, 180, 0.21);
+      font-size: clamp(1rem, 1vw, 2.5rem);
+    }
+    > .chat:hover {
+      background: #fed8b1;
+      transition: all 0.5s;
+    }
+
+    > .cv {
+      border: #ffbc00 1px solid;
+      border-radius: 40px;
+      padding: 1.5vh 2.5vw;
+      color: white;
+      font-size: clamp(1rem, 1vw, 2.5rem);
+      display: flex;
+      gap: 5px;
+
+      > * {
+        position: relative;
+        left: -10px;
+      }
+    }
+
+    > .projects {
+      line-height: 50px;
+      color: #647396;
+      border: #647396 1px solid;
+      border-radius: 40px;
+      padding: 0vh 1rem;
+      font-size: clamp(0.8rem, 1vw, 2.5rem);
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .name-skills {
+    gap: 1rem;
     align-items: flex-start;
-    gap: 2rem;
 
-    > .hero-buttons{
-
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-
-        > a {
-            > img {
-                height: 50px;
-            }
-        }
-
-        > .chat{
-            background-color: #FFBC00;
-            padding: 1.5vh 3vw;
-            font-weight: 600;
-            border-radius: 40px;
-            box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
-            -webkit-box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
-            -moz-box-shadow: 0px 0px 35px 0px rgba(220,242,180,0.21);
-            font-size: clamp(1rem, 1vw, 2.5rem);
-        }
-
-        > .cv{
-            border: #FFBC00 1px solid;
-            border-radius: 40px;
-            padding: 1.5vh 2.5vw;
-            color: white;
-            font-size: clamp(1rem, 1vw, 2.5rem);
-            display: flex; 
-            gap: 5px;
-
-            > *{
-                position: relative;
-                left: -10px;
-            }
-        }
-
-        > .projects{
-            line-height: 50px;
-            color: #647396;
-            border: #647396 1px solid;
-            border-radius: 40px;
-            padding: 0vh 1rem;
-            font-size: clamp(0.8rem, 1vw, 2.5rem);
-        }
+    > h3 {
+      width: 100%;
     }
+  }
+
+  .skills {
+    gap: 1rem;
+  }
 }
 
-@media (max-width: 1025px){
-    .name-skills{
-        gap: 1rem;
-        align-items: flex-start;
+@media (max-width: 641px) {
+  .skills {
+    width: 100%;
 
-        > h3{
-            width: 100%;
+    > .hero-buttons:nth-child(1) {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+
+      > .cv {
+        justify-content: center;
+        padding: 1.5vh 3vw;
+
+        > * {
+          position: relative;
+          left: -10px;
         }
+      }
+
+      > .chat {
+        padding: 1.5vh 3vw;
+      }
     }
-
-    .skills{
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 641px){
-
-    .skills{
-
-        width: 100%;
-
-        >.hero-buttons:nth-child(1){
-
-            flex-direction: column;
-            width: 100%;
-            gap: 1rem;
-            
-            > .cv{
-                justify-content: center;
-                padding: 1.5vh 3vw;
-
-                > *{
-                    position: relative;
-                    left: -10px;
-                }
-            }
-
-            > .chat{
-                padding: 1.5vh 3vw;
-            }
-        }
-    }
+  }
 }
