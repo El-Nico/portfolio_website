@@ -83,14 +83,14 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
 
   scrollUp() {
 
-    this.scrollableDiv.nativeElement.scrollBy({ top: 10 });
-    console.log(this.scrollableDiv.nativeElement)
+    this.scrollableDiv.nativeElement.scrollBy({ top: 10, behavior: 'smooth' });
+    // console.log(this.scrollableDiv.nativeElement)
 
   }
 
   scrollDown() {
 
-    this.scrollableDiv.nativeElement.scrollBy({ top: -10 });
+    this.scrollableDiv.nativeElement.scrollBy({ top: -10, behavior: 'smooth' });
 
   }
 
