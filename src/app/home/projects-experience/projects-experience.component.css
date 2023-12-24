@@ -136,6 +136,6 @@ main {
   grid-template-rows: 1fr;
 }
 
-.swiper-custom{
-  height: 60vh !important;
+.swiper-custom {
+  height: 50vh !important;
 }

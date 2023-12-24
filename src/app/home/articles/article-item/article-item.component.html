@@ -10,7 +10,8 @@
     <div [class]="item.categoryClasses">{{item.category}}</div>
     <!-- <div [class]="item.categoryClasses">{{item.category}}</div> -->
     <h3>
-        <a [routerLink]="item.articleUrl"
+        <!-- <a [routerLink]="[item.articleUrl,{articleId:item.id}]" -->
+        <a [routerLink]="[item.articleUrl]"
             routerLinkActive="router-link-active">{{item.articleTitle}}</a>
     </h3>
     <p>{{item.articleDesc}}</p>

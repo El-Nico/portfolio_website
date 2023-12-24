@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewEncapsulation, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild, ViewEncapsulation, inject } from '@angular/core';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
-import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faCaretSquareDown, faCaretSquareUp, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Observable, Subscription, fromEvent } from 'rxjs';
 import { ScrollResizeService } from 'src/app/shared/scroll-resize.service';
 import AOS from "aos";
@@ -24,6 +24,11 @@ export interface articleItem {
   styleUrls: ['./articles.component.css'],
 })
 export class ArticlesComponent implements OnInit, AfterViewInit {
+  //manual scroll
+  @ViewChild('scrollableDiv')
+  private scrollableDiv!: ElementRef;
+  // @HostListener('window:scroll', ['$event'])
+
 
   @ViewChild('mainContainer', { static: false })
   mainContainer!: ElementRef;
@@ -32,8 +37,8 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
   @ViewChild('pageContainer', { static: false })
   pageContainer!: ElementRef;
 
-  faCaretUp = faCaretUp
-  faCaretDown = faCaretDown
+  faCaretUp = faCaretSquareUp
+  faCaretDown = faCaretSquareDown
 
 
   articleItems$: Observable<any[]>;
@@ -45,9 +50,11 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
   subCompHeight = 0;
   subCompHeightSubscription!: Subscription
 
+
+
   constructor(private scrollResizeService: ScrollResizeService) {
     const articleItemCollection = collection(this.firestore, 'articles')
-    this.articleItems$ = collectionData(articleItemCollection);
+    this.articleItems$ = collectionData(articleItemCollection, { idField: 'id' });
 
 
   }
@@ -74,6 +81,19 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
     return !cardItem.cardClasses.includes('span-2') && cardItem.imgUrl;
   }
 
+  scrollUp() {
+
+    this.scrollableDiv.nativeElement.scrollBy({ top: 10 });
+    console.log(this.scrollableDiv.nativeElement)
+
+  }
+
+  scrollDown() {
+
+    this.scrollableDiv.nativeElement.scrollBy({ top: -10 });
+
+  }
+
 
   ngAfterViewInit(): void {
 
@@ -86,12 +106,14 @@ export class ArticlesComponent implements OnInit, AfterViewInit {
   }
 
 
+
   ngOnInit(): void {
     AOS.init();
     this.articleItems$.subscribe(items => {
       this.articleItems = items.sort((a, b) => {
         return a.rank - b.rank
       })
+      // console.log(this.articleItems)
     })
 
 

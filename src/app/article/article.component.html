@@ -1,10 +1,81 @@
 <div class="page">
     <!-- <div class="page-container"> -->
-        <header>
-            <app-navbar [bgMode]="'bg-dark'"></app-navbar>
-        </header>
-        <main><p>article works!</p></main>
-        <app-footer></app-footer>
+    <header>
+        <!-- <app-navbar [bgMode]="'bg-dark'"></app-navbar> -->
+        <app-navbar [bgMode]="'none'"></app-navbar>
+    </header>
+    <main>
+        <h1 class="l-heading">{{article.articleTitle}}</h1>
+        <section id="article">
+
+            <article class="card page-container2">
+                <!-- <img
+                            src="https://source.unsplash.com/random/200x200?sports"
+                            alt> -->
+
+                <div class="meta">
+                    <small>
+                        <i class="fas fa-user"></i> Written By
+                        {{article.author}},
+                        &nbsp;{{article.date}}
+                    </small>
+                    <div class="category category-data-ai">{{article.category}}</div>
+                </div>
+                <!-- <div class="iframe" [style.height]="height.value"> -->
+                <!-- <div *ngIf="obtainedFirstHeight; else catch"> -->
+                <iframe
+                    [src]="iFrameSrc | safe"
+                    width="100%"
+                    frameborder="0"
+                    scrolling="auto"
+                    [title]="article.articleTitle"
+                    (load)="onLoad($event)"
+                    (resize)="onLoad($event)"
+                    [height]="article.articleHeight"
+                    id="iFrame1"
+                    #catche></iframe>
+                <!-- </div> -->
+                <!-- <ng-template #catch>
+
+                </ng-template>
+                <div>
+                </div> -->
+
+                <!-- <iframe
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-v2-2023.appspot.com/o/articles%2Fwhat_are_convolutional_neural_networks%2Fwhat_are_convolutional_neural_networks.htm?alt=media&token=a588034c-24f9-43f7-b9dd-e36230ed08ae"
+                    [style]="rStyle()"
+                    scrolling="auto"
+                    frameborder="0"
+                    title="what_are_convolutional_neural_networks"
+                    (load)="onLoad($event)"
+                    (resize)="onLoad($event)"
+                    id="iFrame1"></iframe> -->
+                <!-- </div> -->
+
+            </article>
+
+            <!-- <aside id="categories" class="card">
+                <h2>Categories</h2>
+                <ul class="list">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>
+                            Angular</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>
+                            React</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i>
+                            Data/AI</a></li>
+
+                </ul>
+            </aside> -->
+
+            <!-- <aside class="card bg-secondary">
+                        <h2>Join Our Club</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Odit, id?</p>
+                        <a href="#" class="btn btn-dark btn-block">Join Now</a>
+                    </aside> -->
+
+        </section>
+    </main>
+    <app-footer></app-footer>
     <!-- </div> -->
 </div>
-

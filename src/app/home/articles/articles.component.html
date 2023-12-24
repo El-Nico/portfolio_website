@@ -1,19 +1,22 @@
 <div class="page background-white">
     <div class="padding-container" #pageContainer>
-        <header #header  data-aos="fade-in" data-aos-duration="2000"><h1>Articles</h1>
+        <header #header data-aos="fade-in"
+            data-aos-duration="2000"><h1>Articles</h1>
             <!-- <h2>Editor Picks</h2> -->
         </header>
         <!-- <main class="container background-light p-1"> -->
         <main #mainContainer>
-            <!-- <div class="custom-scrollbar-v">
-                <fa-icon [icon]="faCaretUp"></fa-icon>
-                <fa-icon [icon]="faCaretDown"></fa-icon>
-            </div> -->
+            <div class="custom-scrollbar-v">
+                <fa-icon [icon]="faCaretUp" (click)="scrollUp()"></fa-icon>
+                <fa-icon [icon]="faCaretDown" (click)="scrollDown()"></fa-icon>
+            </div>
 
             <!-- <div class="article-grid background-light p-1 custom-scrollbar-vertical"> -->
-            <div class="article-grid"  data-aos="fade-in" data-aos-duration="2000">
+            <div id='scrollableDiv' class="article-grid" data-aos="fade-in"
+                data-aos-duration="2000" #scrollableDiv>
                 <!-- <div class="article-item-container"> -->
-                <app-article-item *ngFor="let item of articleItems" class="card-standard"
+                <app-article-item *ngFor="let item of articleItems"
+                    class="card-standard"
                     [item]="item" [class]="item.cardClasses"
                     [class.span-1]="isSingleSpan(item)"
                     [ngStyle]="translater()">

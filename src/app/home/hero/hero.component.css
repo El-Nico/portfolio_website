@@ -162,6 +162,10 @@ img {
   }
 }
 
+.hero-buttons a:hover {
+  opacity: 0.4;
+}
+
 @media (max-width: 1025px) {
   .name-skills {
     gap: 1rem;

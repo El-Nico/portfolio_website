@@ -1,4 +1,28 @@
 main {
-    min-height: calc(100vh - 57px);
-    padding-top: 100px;
+  min-height: calc(100vh - 57px);
+  padding-top: 100px;
+  /* height: 10000px; */
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+#article {
+  display: grid;
+  /* grid-template-columns: 90% 10%; */
+}
+
+.iframe {
+  /* height: 100vh; */
+  /* border: none; */
+  margin-top: 1rem;
 }

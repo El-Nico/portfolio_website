@@ -15,9 +15,9 @@
 }
 
 .category {
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #009cff;
+  --data-ai-color: #f99500;
+  --angular-color: #a66bbe;
+  --react-color: #009cff;
 }
 
 .primary-hover:hover {
@@ -143,6 +143,12 @@ ul > li {
   /* height rules */
   max-height: var(--page-container-max-height);
   overflow: hidden;
+}
+
+.page-container2 {
+  width: 100%;
+  max-width: var(--website-width);
+  margin: auto;
 }
 
 a {
@@ -299,5 +305,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* font-family: Poppins, "Helvetica Neue", sans-serif; */
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: Dosis, "Helvetica Neue", sans-serif;
 }

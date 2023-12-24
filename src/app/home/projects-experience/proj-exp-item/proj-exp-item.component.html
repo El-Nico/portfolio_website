@@ -1,13 +1,32 @@
 
 <div class="card-standard color-black project-card">
+    <div class="image-star-rating"
+        [style]="backgroundImageStyle()">
+
+    </div>
+    <div class="desc-container">
+        <div class="item-container">
+            <h3 class="project-title"
+                routerLinkActive="router-link-active"><a [href]="projDest"
+                    target="_blank" rel="noopener noreferrer">{{project.title}}</a></h3>
+        </div>
+        <div class="category">
+            <!-- <div class="cat"></div> -->
+            <p style="text-overflow: ellipsis;"
+                [class]="project.categoryClass">{{project.category}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="card-standard color-black project-card">
     <div class="image-star-rating">
         <img
             [src]=project.imgUrl
             alt="carousel-img">
         <div class="item-container">
             <h3 class="project-title"
-                [routerLink]="'/articles/'+project.id"
-                routerLinkActive="router-link-active">{{project.title}}</h3>
+                routerLinkActive="router-link-active"><a [href]="projDest"
+                    target="_blank" rel="noopener noreferrer">{{project.title}}</a></h3>
         </div>
     </div>
     <div class="desc-container">
@@ -15,4 +34,4 @@
             <p style="text-overflow: ellipsis;">{{project.desc}}</p>
         </div>
     </div>
-</div>
+</div> -->

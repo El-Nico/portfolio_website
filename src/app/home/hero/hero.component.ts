@@ -17,7 +17,7 @@ export class HeroComponent implements OnInit {
 
     let n = 7
     for (let i = 0; i <= n; i++) {
-      console.log(i * (1 / n))
+      // console.log(i * (1 / n))
     }
   }
 

@@ -1,69 +1,72 @@
-.page{
-    /* height: 100vh; */
-    padding-inline: 2rem;
-    display: grid;
-    padding: 4rem 0px 6rem 0px;
+.page {
+  /* height: 100vh; */
+  padding-inline: 2rem;
+  display: grid;
+  padding: 4rem 0px 6rem 0px;
 }
-.yellow-bar{
-    width: 4px;
-    height: 100%;
-    background-color: var(--main-colour);
-    margin-inline: 1rem;
-}
-
-main{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 10px;
-    /* background: var(--medium-colour); */
+.yellow-bar {
+  width: 4px;
+  height: 100%;
+  background-color: var(--main-colour);
+  margin-inline: 1rem;
 }
 
-.header{
-    margin-bottom: 2rem;
+main {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  /* background: var(--medium-colour); */
 }
-.header>h1::after{
-    content: "";
-    height: 2px;
-    width: 3rem;
-    background: var(--main-colour);
-    display: block;
-    margin: 0 auto 1rem auto;
+
+.header {
+  margin-bottom: 2rem;
+}
+.header > h1::after {
+  content: "";
+  height: 2px;
+  width: 3rem;
+  background: var(--main-colour);
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 img {
-    border-radius: 8px;
-    width: 200px;
+  border-radius: 8px;
+  width: 200px;
 }
 
-.about-text-container{
-    text-align: justify;
-    padding: 1rem 0.5rem;
+.about-text-container {
+  text-align: justify;
+  padding: 1rem 0.5rem;
 }
 
-.about-text{
-    line-height: 1.5;
+.about-text {
+  line-height: 2;
+  text-align: center;
 }
+
+/* .about-div p {
+  line-height: 5;
+} */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
+  .message-input textarea {
+    height: 50px;
+  }
 
-    .message-input textarea{
-        height: 50px;
-    }
+  .yellow-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-colour);
+    margin-block: 1rem;
+    margin-inline: 0;
+  }
 
-    .yellow-bar{
-        height: 4px;
-       width: 100%;
-        background-color: var(--main-colour);
-        margin-block: 1rem;
-        margin-inline: 0;
-    }
-
-    .about-text-container{
-        /* text-align: justify; */
-        padding: 1rem 0;
-        align-self: center;
-    }
+  .about-text-container {
+    /* text-align: justify; */
+    padding: 1rem 0;
+    align-self: center;
+  }
 }

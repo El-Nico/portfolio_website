@@ -1,47 +1,58 @@
 /* general settings */
 a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Dosis', cursive;
-    margin-bottom: .55rem;
-    line-height: 1.3;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dosis", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
 /* 
   .page-container{
     padding: 0 2rem;
   } */
 
-   /* utility */
+/* utility */
 
-   .category {
-    display: inline-block;
-    color: #fff;
-    font-size: 0.55rem;
-    text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
-    border-radius: 15px;
-    margin-bottom: 0.5rem;
-  }
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
 
-  .category-sports { background: var(--sports-color) }
-  .category-ent { background: var(--ent-color) }
-  .category-tech { background: var(--tech-color) }
+.category-angular {
+  background: var(--angular-color);
+}
+.category-react {
+  background: var(--react-color);
+}
+.category-data-ai {
+  background: var(--data-ai-color);
+}
 
-  .btn{
-    display: inline-block;
-    border: none;
-    background: var(--dark-colour);
-    color: #fff;
-    padding: 0.5rem 1.5rem;
-  }
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-colour);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
 
-  .card {
-    background: #fff;
-    padding: 1rem;
-  }
+.card {
+  background: #fff;
+  padding: 1rem;
+}
 
-  img{
-    /* max-width: 220px; */
-  }
+img {
+  /* max-width: 220px; */
+}

@@ -14,6 +14,9 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { IframeAutoHeightDirective } from './article/iframe-auto-height.directive';
+import { SafePipe } from './article/safe.pipe';
+
 
 
 
@@ -23,6 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ArticleComponent,
     WelcomeComponent,
     AdminComponent,
+    IframeAutoHeightDirective,
+    SafePipe,
   ],
   imports: [
     AppRoutingModule,

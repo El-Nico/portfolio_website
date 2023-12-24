@@ -39,3 +39,27 @@ ML/AI/Data
 https://stackoverflow.com/questions/35527456/angular-window-resize-event
 
 DARK MODE
+
+write 2 articles one for pshowcaser and one for my portfolio
+myportfolio
+tutshow
+ai stuff
+ds and a
+css tuts
+react state management
+
+more articls soon
+possibly the hosting api
+
+the aim tomorrow is simple, DO STUFF
+
+1 make cnn work, 2 write readme for pshowcaser
+
+write readme for pshowcaser>>>>>>wait i can write this in word then... holup
+
+2899.98->3000 +100px
+
+do 2 quick rough word docs for show caser and portfolio
+upload both to atabase 
+add both to the firestore
+link firestore iframe url to article/:id AND MONEY, OH DONT FORGET TO CHECK AND AD BOX MODEL HEIGHT TO FIRESTORE

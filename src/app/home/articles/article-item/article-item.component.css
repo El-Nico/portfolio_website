@@ -1,6 +1,7 @@
- /* import general settings */
- @import "../general-settings.css";
+/* import general settings */
+@import "../general-settings.css";
 
- 
-  
- 
+.content h3 a:hover {
+  /* color: var(--main-colour); */
+  text-decoration: underline;
+}
