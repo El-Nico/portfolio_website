@@ -1,0 +1,15 @@
+main {
+  height: 100vh;
+  width: 100vw;
+
+  /* positioning */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 500px;
+  text-align: center;
+}

@@ -40,18 +40,8 @@ export class AuthenticationService implements OnDestroy {
   }
 
   // sign in
-  SignIn(email: string, password: string) {
-    signInWithEmailAndPassword(this.auth, email, password)
-      .then((userCredential) => {
-        // signed in
-        const user = userCredential.user;
-        console.log('signed in', user)
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage)
-      });
+  SignIn(email: string, password: string): Promise<any> {
+    return signInWithEmailAndPassword(this.auth, email, password)
   }
 
   ngOnDestroy() {

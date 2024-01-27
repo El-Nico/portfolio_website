@@ -16,6 +16,9 @@ import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IframeAutoHeightDirective } from './article/iframe-auto-height.directive';
 import { SafePipe } from './article/safe.pipe';
+import { getStorage, provideStorage } from '@angular/fire/storage';
+import { StorageComponent } from './admin/storage/storage.component';
+import { LoginComponent } from './admin/login/login.component';
 
 
 
@@ -28,6 +31,8 @@ import { SafePipe } from './article/safe.pipe';
     AdminComponent,
     IframeAutoHeightDirective,
     SafePipe,
+    StorageComponent,
+    LoginComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -38,6 +43,7 @@ import { SafePipe } from './article/safe.pipe';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
+    provideStorage(() => getStorage()),
     ReactiveFormsModule
   ],
   providers: [],
